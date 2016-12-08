@@ -18,7 +18,7 @@
 % 2010.11.25 (c) Ioannis Filippidis, jfilippidis@gmail.com
 
 %% name file
-openstreetmap_filename = 'map.osm';
+openstreetmap_filename = 'mapMP.osm';
 %map_img_filename = 'map.png'; % image file saved from online, if available
 
 %% convert XML -> MATLAB struct
@@ -41,8 +41,8 @@ dg = connectivity_matrix; % directed graph
 %}
 
 % try without the assumption of one-way roads
-start = 1; % node global index
-target = 9;
+start = 16; % node global index
+target = 203;
 dg = or(connectivity_matrix, connectivity_matrix.'); % make symmetric
 [route, dist] = route_planner(dg, start, target);
 
@@ -61,6 +61,6 @@ only_nodes = 1:10:1000; % not all nodes, to reduce graphics memory & clutter
 plot_nodes(ax, parsed_osm, only_nodes)
 
 % show intersection nodes (unseful, but may result into a cluttered plot)
-%plot_nodes(ax, parsed_osm, intersection_node_indices)
+plot_nodes(ax, parsed_osm, intersection_node_indices)
 
 hold(ax, 'off')
