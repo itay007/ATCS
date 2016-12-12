@@ -1,0 +1,343 @@
+LOCUS       NM_175642               5522 bp    mRNA    linear   ROD 12-MAR-2008
+DEFINITION  Mus musculus brain-specific angiogenesis inhibitor 3 (Bai3), mRNA.
+ACCESSION   NM_175642
+VERSION     NM_175642.4  GI:169790904
+KEYWORDS    .
+SOURCE      Mus musculus (house mouse)
+  ORGANISM  Mus musculus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia;
+            Sciurognathi; Muroidea; Muridae; Murinae; Mus.
+REFERENCE   1  (bases 1 to 5522)
+  AUTHORS   Munton,R.P., Tweedie-Cullen,R., Livingstone-Zatchej,M.,
+            Weinandy,F., Waidelich,M., Longo,D., Gehrig,P., Potthast,F.,
+            Rutishauser,D., Gerrits,B., Panse,C., Schlapbach,R. and Mansuy,I.M.
+  TITLE     Qualitative and quantitative analyses of protein phosphorylation in
+            naive and stimulated mouse synaptosomal preparations
+  JOURNAL   Mol. Cell Proteomics 6 (2), 283-293 (2007)
+   PUBMED   17114649
+REFERENCE   2  (bases 1 to 5522)
+  AUTHORS   Kee,H.J., Ahn,K.Y., Choi,K.C., Won Song,J., Heo,T., Jung,S.,
+            Kim,J.K., Bae,C.S. and Kim,K.K.
+  TITLE     Expression of brain-specific angiogenesis inhibitor 3 (BAI3) in
+            normal brain and implications for BAI3 in ischemia-induced brain
+            angiogenesis and malignant glioma
+  JOURNAL   FEBS Lett. 569 (1-3), 307-316 (2004)
+   PUBMED   15225653
+REFERENCE   3  (bases 1 to 5522)
+  AUTHORS   Wang,Y., Zhang,Z., Yan,Y., Lemon,W.J., LaRegina,M., Morrison,C.,
+            Lubet,R. and You,M.
+  TITLE     A chemically induced model for squamous cell carcinoma of the lung
+            in mice: histopathology and strain susceptibility
+  JOURNAL   Cancer Res. 64 (5), 1647-1654 (2004)
+   PUBMED   14996723
+REFERENCE   4  (bases 1 to 5522)
+  AUTHORS   Okazaki,N., Kikuno,R., Ohara,R., Inamoto,S., Koseki,H., Hiraoka,S.,
+            Saga,Y., Nagase,T., Ohara,O. and Koga,H.
+  TITLE     Prediction of the coding sequences of mouse homologues of KIAA
+            gene: III. the complete nucleotide sequences of 500 mouse
+            KIAA-homologous cDNAs identified by screening of terminal sequences
+            of cDNA clones randomly sampled from size-fractionated libraries
+  JOURNAL   DNA Res. 10 (4), 167-180 (2003)
+   PUBMED   14621295
+REFERENCE   5  (bases 1 to 5522)
+  AUTHORS   Kee,H.J., Koh,J.T., Kim,M.Y., Ahn,K.Y., Kim,J.K., Bae,C.S.,
+            Park,S.S. and Kim,K.K.
+  TITLE     Expression of brain-specific angiogenesis inhibitor 2 (BAI2) in
+            normal and ischemic brain: involvement of BAI2 in the
+            ischemia-induced brain angiogenesis
+  JOURNAL   J. Cereb. Blood Flow Metab. 22 (9), 1054-1067 (2002)
+   PUBMED   12218411
+COMMENT     VALIDATED REFSEQ: This record has undergone validation or
+            preliminary review. The reference sequence was derived from
+            AC116556.14, AK129162.1, BC032251.1 and AK044248.1.
+            On Mar 12, 2008 this sequence version replaced gi:71896636.
+            
+            Sequence Note: The RefSeq transcript and protein were derived from
+            transcript and genomic sequence to make the sequence consistent
+            with the reference genome assembly. The genomic coordinates used
+            for the transcript record were based on alignments.
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-246               AC116556.14        84978-85223
+            247-1018            AC116556.14        87910-88681
+            1019-1995           AK129162.1         345-1321
+            1996-3449           BC032251.1         312-1765
+            3450-5522           AK044248.1         884-2956
+FEATURES             Location/Qualifiers
+     source          1..5522
+                     /organism="Mus musculus"
+                     /mol_type="mRNA"
+                     /strain="C57BL/6"
+                     /db_xref="taxon:10090"
+                     /chromosome="1"
+     gene            1..5522
+                     /gene="Bai3"
+                     /synonym="MGC107444, A830096D10Rik"
+                     /note="brain-specific angiogenesis inhibitor 3"
+                     /db_xref="GeneID:210933"
+                     /db_xref="MGI:2441837"
+     exon            1..246
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=1
+     exon            247..1018
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=2
+     CDS             262..4830
+                     /gene="Bai3"
+                     /note="G protein-coupled receptor BAI3"
+                     /codon_start=1
+                     /product="brain-specific angiogenesis inhibitor 3"
+                     /protein_id="NP_783573.4"
+                     /db_xref="GI:169790905"
+                     /db_xref="CCDS:CCDS14855.1"
+                     /db_xref="GeneID:210933"
+                     /db_xref="MGI:2441837"
+                     /translation="MKAVRNLLIYIFSTYLLVMFGFNAAQDFWCSTLVKGVIYGSYSV
+                     SEMFPKNFTNCTWTLENPDPTKYSIYLKFSKKDLSCSNFSLLAYQFDHFSHEKIKDLL
+                     RKNHSIMQLCSSKNAFVFLQYDKNFIQIRRVFPTDFPGLQKKVEEDQKSFFEFLVLNK
+                     VSPSQFGCHVLCTWLESCLKSENGRTESCGIMYTKCTCPQHLGEWGIDDQSLVLLNNV
+                     VLPLNEQTEGCLTQELQTTQVCNLTREAKRPPKEEFGMMGDHTIKSQRPRSVHEKRVP
+                     QEQADAAKFMAQTGESGVEEWSQWSACSVTCGQGSQVRTRTCVSPYGTHCSGPLRESR
+                     VCNNTALCPVHGVWEEWSPWSLCSFTCGRGQRTRTRSCTPPQYGGRPCEGPETHHKPC
+                     NIALCPVDGQWQEWSSWSHCSVTCSNGTQQRSRQCTAAAHGGSECRGPWAESRECYNP
+                     ECTANGQWNQWGHWSGCSKSCDGGWERRMRTCQGAAVTGQQCEGTGEEVRRCSEQRCP
+                     APYEICPEDYLISMVWKRTPAGDLAFNQCPLNATGTTSRRCSLSLHGVASWEQPSFAR
+                     CISNEYRHLQHSIKEHLAKGQRMLAGDGMSQVTKTLLDLTQRKNFYAGDLLVSVEILR
+                     NVTDTFKRASYIPASDGVQNFFQIVSNLLDEENKEKWEDAQQIYPGSIELMQVIEDFI
+                     HIVGMGMMDFQNSYLMTGNVVASIQKLPAASVLTDINFPMKGRKGMVDWARNSEDRVV
+                     IPKSIFTPVSSKELDESSVFVLGAVLYKNLDLILPTLRNYTVVNSKVIVVTIRPEPKT
+                     TDSFLEIELAHLANGTLNPYCVLWDDSKSNESLGTWSTQGCKTVLTDASHTKCLCDRL
+                     STFAILAQQPREIVMESSGTPSVTLIVGSGLSCLALITLAVVYAALWRYIRSERSIIL
+                     INFCLSIISSNILILVGQTQTHNKSICTTTTAFLHFFFLASFCWVLTEAWQSYMAVTG
+                     KIRTRLIRKRFLCLGWGLPALVVATSVGFTRTKGYGTDHYCWLSLEGGLLYAFVGPAA
+                     AVVLVNMVIGILVFNKLVSRDGILDKKLKHRAGQMSEPHSGLTLKCAKCGVVSTTALS
+                     ATTASNAMASLWSSCVVLPLLALTWMSAVLAMTDKRSILFQILFAVFDSLQGFVIVMV
+                     HCILRREVQDAFRCRLRNCQDPINADSSSSFPNGHAQIMTDFEKDVDIACRSVLHKDI
+                     GPCRAATITGTLSRISLNDDEEEKGTNPEGLSYSTLPGNVISKVIIQQPTGLHMPMSM
+                     NELSNPCLKKENTELRRTVYLCTDDNLRGADMDIVHPQERMMESDYIVMPRSSVSTQP
+                     SMKEESKMNIGMETLPHERLLHYKVNPEFNMNPPVMDQFNMNLDQHLAPQEHMQNLPF
+                     EPRTAVKNFMASELDDNVGLSRSETGSTISMSSLERRKSRYSDLDFEKVMHTRKRHME
+                     LFQELNQKFQTLDRFRDIPNTSSMENPAPNKNPWDTFKPPSEYQHYTTINVLDTEAKD
+                     TLELRPAEWEKCLNLPLDVQEGDFQTEV"
+     STS             1018..1816
+                     /gene="Bai3"
+                     /standard_name="Bai3"
+                     /db_xref="UniSTS:474763"
+     exon            1019..1129
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=3
+     exon            1130..1291
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=4
+     exon            1292..1456
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=5
+     exon            1457..1621
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=6
+     exon            1622..1786
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=7
+     exon            1787..1888
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=8
+     exon            1889..1995
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=9
+     exon            1996..2190
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=10
+     exon            2191..2259
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=11
+     exon            2260..2368
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=12
+     exon            2369..2518
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=13
+     exon            2519..2594
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=14
+     exon            2595..2697
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=15
+     exon            2698..2741
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=16
+     exon            2742..2868
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=17
+     exon            2869..2972
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=18
+     exon            2973..3075
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=19
+     exon            3076..3226
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=20
+     exon            3227..3296
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=21
+     exon            3297..3363
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=22
+     STS             3325..3621
+                     /gene="Bai3"
+                     /standard_name="Bai3"
+                     /db_xref="UniSTS:477290"
+     exon            3364..3449
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=23
+     exon            3450..3548
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=24
+     exon            3549..3720
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=25
+     exon            3721..3816
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=26
+     exon            3817..3856
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=27
+     exon            3857..4500
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=28
+     exon            4501..4536
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=29
+     exon            4537..4641
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=30
+     exon            4642..5522
+                     /gene="Bai3"
+                     /inference="alignment:Splign"
+                     /number=31
+ORIGIN      
+        1 ggctctggcc gctggatacc accgcccccc cccctattat ttttttttcc tttttttccc
+       61 tctgcctttc gtttgcatgc attatttttt ttccaatcat aaatcttaat atttgaagct
+      121 gaaccggggg gaaaaatggg caacggtgat tgggaccgaa ggggagtctc tccatcactg
+      181 ttgttgggac gtgtgcctgt tctggtgtct tagatcaaga gcctcccgga gctttcggag
+      241 tggaaggcca aatgacatag gatgaaggct gttcgtaacc tgctgattta tatattttcc
+      301 acctatctcc tggttatgtt tggatttaat gctgcccaag acttctggtg ttccactttg
+      361 gtgaagggag tcatttatgg atcctattct gtaagtgaaa tgtttcccaa aaactttaca
+      421 aactgcacct ggacactgga aaatccagat ccaaccaaat atagcattta cctgaaattt
+      481 tccaaaaagg accttagctg ctctaacttt tcccttctgg cttatcagtt tgatcatttt
+      541 tcccatgaaa aaataaagga tcttttgaga aagaaccatt ccataatgca actttgcagt
+      601 tccaagaatg cttttgtttt tctacagtac gataaaaatt tcattcagat acgccgggta
+      661 tttccaactg atttcccagg attacagaaa aaagtcgaag aggatcagaa atcttttttt
+      721 gagtttttgg tactgaacaa ggtgagcccg agccagtttg gttgccatgt cttatgcact
+      781 tggttggaaa gctgcttaaa atccgaaaat gggagaaccg agtcttgtgg aattatgtac
+      841 acaaaatgca cgtgccccca gcacttggga gagtggggaa tagatgacca gtccctggtt
+      901 ctgttaaata acgtcgtgtt acccctgaat gagcagacgg agggttgcct gactcaggag
+      961 ctgcaaacta ctcaagtctg caatctgacc agggaggcca agagaccacc caaagaagaa
+     1021 tttggaatga tgggagatca tacaattaaa agtcagcgac ctcgatctgt ccatgagaaa
+     1081 agggtccctc aggaacaagc tgatgctgct aaatttatgg cacaaactgg tgaatctggt
+     1141 gtggaagagt ggtcccagtg gagcgcatgc tcagttactt gtggtcaagg gtcgcaggtg
+     1201 cgaaccagaa cttgtgtatc accttacggg acacactgca gcggcccatt aagagaatca
+     1261 agggtttgca ataacactgc cctctgtcca gtacatggag tttgggagga atggtcacct
+     1321 tggagcttat gctccttcac atgtggccga ggccaaagaa cacgaaccag gtcatgcaca
+     1381 cctcctcagt atggaggaag gccctgtgag ggacctgaaa ctcatcacaa gccttgtaat
+     1441 attgccctct gtccagttga cggacagtgg caggaatgga gttcatggag ccactgctca
+     1501 gtgacatgtt ctaatgggac acagcagagg agtcggcagt gcacagcagc tgctcatgga
+     1561 ggctctgagt gccgaggacc atgggctgaa agcagggagt gctacaaccc tgaatgtaca
+     1621 gccaatggtc agtggaatca gtggggtcac tggagtggat gttccaagtc ctgtgatggt
+     1681 ggctgggaga ggagaatgag gacttgtcag ggcgcagctg taacaggaca gcagtgtgaa
+     1741 ggcacaggtg aagaggtacg aagatgcagt gagcagcggt gcccagcacc ttatgaaata
+     1801 tgcccagagg attatcttat atcaatggtg tggaaaagga ctcctgcagg cgacctggca
+     1861 ttcaatcaat gtccactgaa tgccacaggc accactagca gacgctgctc tctcagtctt
+     1921 catggagtgg cctcctggga acagccgagc tttgcaagat gcatatccaa tgagtacaga
+     1981 cacttgcagc attcaattaa agagcacctt gcgaaggggc agcggatgct ggcaggtgat
+     2041 ggaatgtccc aggtcaccaa gacactattg gatttaaccc agaggaaaaa tttctatgca
+     2101 ggtgaccttc tggtgtctgt ggaaatcctg agaaatgtga cagacacgtt taaaagggca
+     2161 agttacatcc ctgcgtctga tggggtccag aacttctttc aaatagttag caaccttctt
+     2221 gatgaagaaa acaaggagaa atgggaagac gcacaacaga tttacccagg ctcaatagag
+     2281 ttaatgcagg tgattgaaga ttttatacac attgttggaa tggggatgat ggactttcaa
+     2341 aattcatacc taatgactgg aaatgtagtg gcgagcattc agaagctccc tgctgcatct
+     2401 gttctaaccg acatcaactt ccccatgaaa ggccggaaag gaatggtaga ctgggcaaga
+     2461 aattcagaag atcgcgttgt gattccaaaa agcattttca ctcccgtgtc ttcaaaagaa
+     2521 ttagatgaat catctgtttt tgttcttgga gcggtcctat acaaaaactt agacctaatt
+     2581 ttgcctactt tgagaaatta cactgtcgtc aattctaaag tcatcgtggt cacaatcagg
+     2641 cctgaaccta aaacaactga ctcatttttg gagatagagc tagctcactt ggcaaatggc
+     2701 actttgaatc catattgcgt gttatgggat gactcaaaat cgaacgagtc tttgggaacg
+     2761 tggtccaccc agggatgtaa aactgtgctt accgatgcat cccatacgaa atgcttatgt
+     2821 gatcggctct ctaccttcgc cattttggct cagcaaccta gagaaatagt catggaatcc
+     2881 tctggtaccc cctcagttac cctcatagta ggcagtggcc tctcctgcct ggccttgata
+     2941 actctagcag ttgtgtacgc agcactatgg aggtatattc gctctgagag gtccatcatt
+     3001 ctaattaact tctgcctgtc tatcatctca tccaatatcc tcatactggt tggacagact
+     3061 cagacacaca ataagagcat ctgcacgacc accaccgcgt tcctgcattt tttcttcctg
+     3121 gcttcattct gttgggtctt gacagaggcg tggcagtcgt atatggctgt gacaggaaaa
+     3181 atcaggaccc ggcttataag aaaacgcttt ttgtgccttg gatgggggct gccagcttta
+     3241 gtagtggcca catctgtagg cttcactagg acgaaaggat acggcacgga tcactactgc
+     3301 tggctgtctc tagaaggagg actgctctat gccttcgttg gacctgcagc ggctgttgtc
+     3361 ctggtcaaca tggtgattgg cattttggta tttaataaac ttgtttccag agatgggatc
+     3421 ctagataaaa agctaaaaca cagagccggt cagatgagtg agcctcatag cggtctgacg
+     3481 ctcaaatgtg ccaagtgtgg agtagtttct acaacagctt tgtcagccac caccgccagt
+     3541 aacgccatgg cctctctttg gagctcctgt gtggtgctac cgcttctggc tctgacatgg
+     3601 atgtctgcag ttctggccat gacagataaa cgctccatat tgtttcagat actttttgcc
+     3661 gtgtttgatt cattacaagg ctttgtgata gtcatggtcc actgcattct tcggagagag
+     3721 gttcaagatg catttagatg ccggttgaga aactgccagg atccaatcaa tgctgattct
+     3781 tcaagttctt ttcctaatgg acatgctcaa atcatgacag actttgaaaa ggacgtagac
+     3841 attgcttgcc gatcagtgct tcataaggat atcggcccct gccgcgcagc aaccataaca
+     3901 ggaacactct ccaggatttc tctaaatgat gatgaggaag aaaagggaac aaaccctgaa
+     3961 gggctaagct actcaacatt gcctggaaat gtcatttcca aagtcatcat tcaacagccc
+     4021 acaggcctgc acatgcctat gagtatgaac gagctaagca atccgtgtct gaaaaaagag
+     4081 aacactgaac tgcggagaac tgtgtactta tgcacggatg acaatctgag aggggccgat
+     4141 atggacattg tccaccccca agaacgaatg atggaaagtg actatattgt gatgcctaga
+     4201 agttctgtaa gcacccagcc atcaatgaaa gaggagagca agatgaatat tggcatggaa
+     4261 accttgccgc atgaaaggct attacactac aaagtaaacc ctgaattcaa tatgaatccc
+     4321 cccgtaatgg accagtttaa tatgaactta gatcagcatc ttgcacccca ggaacatatg
+     4381 cagaatttac cctttgagcc tcgcacagct gtgaagaatt tcatggcctc tgagttggat
+     4441 gataatgtgg gactgtcaag aagtgaaact ggatcaacga tatcaatgag ttctctagag
+     4501 agaagaaaat cgcggtattc tgaccttgac tttgagaagg tcatgcacac aaggaagagg
+     4561 cacatggaat tgtttcagga actaaatcag aagtttcaga ctttggacag atttcgggac
+     4621 ataccaaaca caagcagtat ggaaaaccca gcaccaaaca agaatccatg ggacactttc
+     4681 aaacccccca gtgaatacca acattacacc acaatcaatg tcttagacac ggaggcaaag
+     4741 gatactctgg agctgaggcc ggccgagtgg gagaagtgtc tgaatttgcc tctggatgtg
+     4801 caagagggtg attttcaaac agaagtgtaa ggcaatcaaa aagaacttag gtagagacac
+     4861 agtcaaatac actgacactg agacttggga agcctgacat ttccacctgg acagtgtgac
+     4921 tttcctctgt caggaccctt cttgtgccaa catcagtgtt ttcttatggc aatttctcac
+     4981 tggtcaggct agtggagaga gacggccaag tgtacagttc tcaccacccc gtgttgtaag
+     5041 tacccgtgga atggatttgt aaggtaatct ttatagataa acctcaagca aggatttcat
+     5101 gttgtaacag cttcatgtgg tttagttttc agaaaacttc accatgaagc acaatgtata
+     5161 tatttatgca gtttttaaag tttataacag tctgtttggc cattactaca ctttttactt
+     5221 tataatataa aagcaaagtt tttgtcatta aatgaatgtt tgttgagcta cattcttcat
+     5281 tgctttaaat gcaataaagt aataatctca cttttatatg aataatatat ttcacatctt
+     5341 tattattgca gttttctcta gaaggctctg agtagctttc tctgctgcag ctgtgtataa
+     5401 aatatttaaa atgttgtatg gtgtaaataa acttttgtct acatatcagt tttttagtgc
+     5461 attttatttt ggatttgttg aacagaaatt tacatattta taaagttttc tttttcaata
+     5521 cc
+//
+

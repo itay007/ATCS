@@ -1,0 +1,183 @@
+LOCUS       NP_009297               1149 aa            linear   PRI 26-JUN-2007
+DEFINITION  v-abl Abelson murine leukemia viral oncogene homolog 1 isoform b
+            [Homo sapiens].
+ACCESSION   NP_009297
+VERSION     NP_009297.2  GI:62362412
+DBSOURCE    REFSEQ: accession NM_007313.2
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (residues 1 to 1149)
+  AUTHORS   Jiang,X., Saw,K.M., Eaves,A. and Eaves,C.
+  TITLE     Instability of BCR-ABL gene in primary and cultured chronic myeloid
+            leukemia stem cells
+  JOURNAL   J. Natl. Cancer Inst. 99 (9), 680-693 (2007)
+   PUBMED   17470736
+  REMARK    GeneRIF: Primary and cultured chronic myeloid leukemia stem
+            cellsdisplay instability of the BCR-ABL fusion gene both in vivo
+            and in vitro.
+REFERENCE   2  (residues 1 to 1149)
+  AUTHORS   Rodrigues,M.S. and Sattler,M.
+  TITLE     Chronic myelogenous leukemia progenitors display a genetically
+            unstable personality
+  JOURNAL   J. Natl. Cancer Inst. 99 (9), 662-663 (2007)
+   PUBMED   17470729
+  REMARK    GeneRIF: Acute myelogenous leukemia patients respond to imatinib
+            mesylate only when BCR-ABLE kinase is inhibited.
+REFERENCE   3  (residues 1 to 1149)
+  AUTHORS   Moller,G.M., Frost,V., Melo,J.V. and Chantry,A.
+  TITLE     Upregulation of the TGFbeta signalling pathway by Bcr-Abl:
+            implications for haemopoietic cell growth and chronic myeloid
+            leukaemia
+  JOURNAL   FEBS Lett. 581 (7), 1329-1334 (2007)
+   PUBMED   17349636
+  REMARK    GeneRIF: The expression of Bcr-Abl leads to hyper-responsiveness of
+            myeloid cells to TGFbeta; this novel cross-regulatory mechanism
+            might play an important role in maintaining the transformed
+            progenitor cell population in CML.
+REFERENCE   4  (residues 1 to 1149)
+  AUTHORS   Sherbenou,D.W., Wong,M.J., Humayun,A., McGreevey,L.S., Harrell,P.,
+            Yang,R., Mauro,M., Heinrich,M.C., Press,R.D., Druker,B.J. and
+            Deininger,M.W.
+  TITLE     Mutations of the BCR-ABL-kinase domain occur in a minority of
+            patients with stable complete cytogenetic response to imatinib
+  JOURNAL   Leukemia 21 (3), 489-493 (2007)
+   PUBMED   17252009
+  REMARK    GeneRIF: BCR-ABL-kinase domain mutations in patients with a stable
+            CCR are infrequent, and their detection does not consistently
+            predict relapse. Alternative mechanisms must be responsible for
+            disease persistence in the majority of patients.
+REFERENCE   5  (residues 1 to 1149)
+  AUTHORS   Bartos,J.D., Gaile,D.P., McQuaid,D.E., Conroy,J.M., Darbary,H.,
+            Nowak,N.J., Block,A., Petrelli,N.J., Mittelman,A., Stoler,D.L. and
+            Anderson,G.R.
+  TITLE     aCGH local copy number aberrations associated with overall copy
+            number genomic instability in colorectal cancer: coordinate
+            involvement of the regions including BCR and ABL
+  JOURNAL   Mutat. Res. 615 (1-2), 1-11 (2007)
+   PUBMED   17196995
+  REMARK    GeneRIF: a system akin to the BCR-ABL translocation of CML may be
+            involved in genomic instability in about one-third of colorectal
+            carcinomas
+REFERENCE   6  (residues 1 to 1149)
+  AUTHORS   Overduin,M., Mayer,B., Rios,C.B., Baltimore,D. and Cowburn,D.
+  TITLE     Secondary structure of Src homology 2 domain of c-Abl by
+            heteronuclear NMR spectroscopy in solution
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 89 (24), 11673-11677 (1992)
+   PUBMED   1281542
+REFERENCE   7  (residues 1 to 1149)
+  AUTHORS   Muller,A.J., Pendergast,A.M., Havlik,M.H., Puil,L., Pawson,T. and
+            Witte,O.N.
+  TITLE     A limited set of SH2 domains binds BCR through a high-affinity
+            phosphotyrosine-independent interaction
+  JOURNAL   Mol. Cell. Biol. 12 (11), 5087-5093 (1992)
+   PUBMED   1383690
+REFERENCE   8  (residues 1 to 1149)
+  AUTHORS   Overduin,M., Rios,C.B., Mayer,B.J., Baltimore,D. and Cowburn,D.
+  TITLE     Three-dimensional solution structure of the src homology 2 domain
+            of c-abl
+  JOURNAL   Cell 70 (4), 697-704 (1992)
+   PUBMED   1505033
+REFERENCE   9  (residues 1 to 1149)
+  AUTHORS   Cicchetti,P., Mayer,B.J., Thiel,G. and Baltimore,D.
+  TITLE     Identification of a protein that binds to the SH3 region of Abl and
+            is similar to Bcr and GAP-rho
+  JOURNAL   Science 257 (5071), 803-806 (1992)
+   PUBMED   1379745
+REFERENCE   10 (residues 1 to 1149)
+  AUTHORS   Adams,M.D., Dubnick,M., Kerlavage,A.R., Moreno,R., Kelley,J.M.,
+            Utterback,T.R., Nagle,J.W., Fields,C. and Venter,J.C.
+  TITLE     Sequence identification of 2,375 human brain genes
+  JOURNAL   Nature 355 (6361), 632-634 (1992)
+   PUBMED   1538749
+COMMENT     REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+            reference sequence was derived from CA335983.1, AL707819.1,
+            AB209456.1 and AA524892.1.
+            On Apr 7, 2005 this sequence version replaced gi:6382058.
+            
+            Summary:  The ABL1 protooncogene encodes a cytoplasmic and nuclear
+            protein tyrosine kinase that has been implicated in processes of
+            cell differentiation, cell division, cell adhesion, and stress
+            response.  Activity of c-Abl protein is negatively regulated by its
+            SH3 domain, and deletion of the SH3 domain turns ABL1 into an
+            oncogene.  The t(9;22) translocation results in the head-to-tail
+            fusion of the BCR (MIM:151410) and ABL1 genes present in many cases
+            of chronic myelogeneous leukemia.  The DNA-binding activity of the
+            ubiquitously expressed ABL1 tyrosine kinase is regulated by
+            CDC2-mediated phosphorylation, suggesting a cell cycle function for
+            ABL1.  The ABL1 gene is expressed as either a 6- or 7-kb mRNA
+            transcript, with alternatively spliced first exons spliced to the
+            common exons 2-11.
+            
+            Transcript Variant:  Transcript variant b includes exon 1b, but not
+            exon 1a, resulting in a different N-terminus. This variant contains
+            an N-terminal glycine which could be myristylated and is thus
+            postulated to be directed to the plasma membrane.
+            
+            Publication Note:  This RefSeq record includes a subset of the
+            publications that are available for this gene. Please see the
+            Entrez Gene record to access additional publications.
+FEATURES             Location/Qualifiers
+     source          1..1149
+                     /organism="Homo sapiens"
+                     /db_xref="taxon:9606"
+                     /chromosome="9"
+                     /map="9q34.1"
+     Protein         1..1149
+                     /product="v-abl Abelson murine leukemia viral oncogene
+                     homolog 1 isoform b"
+                     /EC_number="2.7.10.1"
+                     /note="Abelson murine leukemia viral (v-abl) oncogene
+                     homolog 1; proto-oncogene tyrosine-protein kinase ABL1;
+                     bcr/c-abl oncogene protein; BCR/ABL (major breakpoint)
+                     fusion peptide; BCR-ABL fusion; BCR-ABL minor breakpoint
+                     peptide"
+                     /calculated_mol_wt=124824
+     CDS             1..1149
+                     /gene="ABL1"
+                     /coded_by="NM_007313.2:440..3889"
+                     /GO_component="nucleus [pmid 8242749]"
+                     /GO_function="ATP binding; DNA binding [pmid 8242749];
+                     nucleotide binding; protein C-terminus binding [pmid
+                     11971963]; protein-tyrosine kinase activity [pmid
+                     10391249]; transferase activity"
+                     /GO_process="DNA damage response, signal transduction
+                     resulting in induction of apoptosis [pmid 10391249];
+                     intracellular signaling cascade; mismatch repair [pmid
+                     10391249]; protein amino acid phosphorylation; regulation
+                     of progression through cell cycle [pmid 8242749];
+                     regulation of transcription, DNA-dependent [pmid 8242749];
+                     S-phase-specific transcription in mitotic cell cycle [pmid
+                     8242749]"
+                     /note="isoform b is encoded by transcript variant b"
+                     /db_xref="CCDS:CCDS35165.1"
+                     /db_xref="GeneID:25"
+                     /db_xref="HGNC:76"
+                     /db_xref="HPRD:HPRD_01809"
+                     /db_xref="MIM:189980"
+ORIGIN      
+        1 mgqqpgkvlg dqrrpslpal hfikgagkke ssrhggphcn vfvehealqr pvasdfepqg
+       61 lseaarwnsk enllagpsen dpnlfvalyd fvasgdntls itkgeklrvl gynhngewce
+      121 aqtkngqgwv psnyitpvns lekhswyhgp vsrnaaeyll ssgingsflv resesspgqr
+      181 sislryegrv yhyrintasd gklyvssesr fntlaelvhh hstvadglit tlhypapkrn
+      241 kptvygvspn ydkwemertd itmkhklggg qygevyegvw kkysltvavk tlkedtmeve
+      301 eflkeaavmk eikhpnlvql lgvctreppf yiitefmtyg nlldylrecn rqevnavvll
+      361 ymatqissam eylekknfih rdlaarnclv genhlvkvad fglsrlmtgd tytahagakf
+      421 pikwtapesl aynkfsiksd vwafgvllwe iatygmspyp gidlsqvyel lekdyrmerp
+      481 egcpekvyel mracwqwnps drpsfaeihq afetmfqess isdevekelg kqgvrgavst
+      541 llqapelptk trtsrraaeh rdttdvpemp hskgqgesdp ldhepavspl lprkergppe
+      601 gglnederll pkdkktnlfs alikkkkkta ptppkrsssf remdgqperr gageeegrdi
+      661 sngalaftpl dtadpakspk psngagvpng alresggsgf rsphlwkkss tltssrlatg
+      721 eeegggsssk rflrscsasc vphgakdtew rsvtlprdlq stgrqfdsst fgghksekpa
+      781 lprkragenr sdqvtrgtvt ppprlvkkne eaadevfkdi messpgsspp nltpkplrrq
+      841 vtvapasglp hkeeagkgsa lgtpaaaepv tptskagsga pggtskgpae esrvrrhkhs
+      901 sespgrdkgk lsrlkpappp ppaasagkag gkpsqspsqe aageavlgak tkatslvdav
+      961 nsdaakpsqp geglkkpvlp atpkpqsakp sgtpispapv pstlpsassa lagdqpssta
+     1021 fiplistrvs lrktrqpper iasgaitkgv vldstealcl aisrnseqma shsavleagk
+     1081 nlytfcvsyv dsiqqmrnkf afreainkle nnlrelqicp atagsgpaat qdfskllssv
+     1141 keisdivqr
+//
+

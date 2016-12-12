@@ -1,0 +1,69 @@
+<productinfo
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://www.mathworks.com/namespace/info/v1/info.xsd">
+<?xml-stylesheet type="text/xsl" href="http://www.mathworks.com/namespace/info/v1/info.xsl"?>
+
+<matlabrelease>14</matlabrelease>
+<name>Bioinformatics</name>
+<type>toolbox</type>
+<icon>$toolbox/matlab/icons/matlabicon.gif</icon>
+<help_location>$docroot/toolbox/bioinfo</help_location>
+
+<list>
+
+<listitem>
+<label>Biological Sequence Viewer (seqviewer)</label>
+<callback>seqviewer</callback>
+<icon>$toolbox/matlab/icons/figureicon.gif</icon>
+</listitem>
+
+<listitem>
+<label>Biological Sequence Alignment (seqalignviewer)</label>
+<callback>seqalignviewer</callback>
+<icon>$toolbox/matlab/icons/figureicon.gif</icon>
+</listitem>
+
+<listitem>
+<label>Molecule Viewer (molviewer)</label>
+<callback>molviewer</callback>
+<icon>$toolbox/matlab/icons/figureicon.gif</icon>
+</listitem>
+
+<listitem>
+<label>NGS Browser (ngsbrowser)</label>
+<callback>ngsbrowser</callback>
+<icon>$toolbox/matlab/icons/figureicon.gif</icon>
+</listitem>
+
+<listitem>
+<label>Phylogenetic Tree (phytreeviewer)</label>
+<callback>phytreeviewer</callback>
+<icon>$toolbox/matlab/icons/figureicon.gif</icon>
+</listitem>
+
+<listitem>
+<label>Protein Plot Tool (proteinplot)</label>
+<callback>proteinplot</callback>
+<icon>$toolbox/matlab/icons/figureicon.gif</icon>
+</listitem>
+
+<listitem>
+<label>Help</label>
+<callback>doc bioinfo/</callback>
+<icon>$toolbox/matlab/icons/book_mat.gif</icon>
+</listitem>
+
+<listitem>
+<label>Demos</label>
+<callback>demo toolbox Bioinformatics</callback>
+<icon>$toolbox/matlab/icons/demoicon.gif</icon>
+</listitem>
+
+<listitem>
+<label>Product Page (Web)</label>
+<callback>web http://www.mathworks.com/products/bioinfo/ -browser;</callback>
+<icon>$toolbox/matlab/icons/webicon.gif</icon>
+</listitem>
+
+</list>
+</productinfo>

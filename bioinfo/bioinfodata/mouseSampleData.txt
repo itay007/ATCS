@@ -1,0 +1,33 @@
+# id: Sample  identifier					
+# Gender: Gender of the mouse in study					
+# Age: The number of weeks since mouse birth 					
+# Type: Genetic characters					
+# Strain: The mouse strain					
+# Source: The tissue source for RNA collection					
+ID	Gender	Age	Type	Strain	Source
+A	Male	8	Wild type	129S6/SvEvTac	amygdala
+B	Male	8	Wild type	129S6/SvEvTac	amygdala
+C	Male	8	Wild type	129S6/SvEvTac	amygdala
+D	Male	8	Wild type	A/J 	amygdala
+E	Male	8	Wild type	A/J 	amygdala
+F	Male	8	Wild type	C57BL/6J 	amygdala
+G	Male	8	Wild type	C57BL/6J	amygdala
+H	Male	8	Wild type	129S6/SvEvTac	cingulate cortex
+I	Male	8	Wild type	129S6/SvEvTac	cingulate cortex
+J	Male	8	Wild type	A/J	cingulate cortex
+K	Male	8	Wild type	A/J	cingulate cortex
+L	Male	8	Wild type	A/J	cingulate cortex
+M	Male	8	Wild type	C57BL/6J	cingulate cortex
+N	Male	8	Wild type	C57BL/6J	cingulate cortex
+O	Male	8	Wild type	129S6/SvEvTac	hippocampus
+P	Male	8	Wild type	129S6/SvEvTac	hippocampus
+Q	Male	8	Wild type	A/J	hippocampus
+R	Male	8	Wild type	A/J	hippocampus
+S	Male	8	Wild type	C57BL/6J	hippocampus
+T	Male	8	Wild type	C57BL/6J4	hippocampus
+U	Male	8	Wild type	129S6/SvEvTac	hypothalamus
+V	Male	8	Wild type	129S6/SvEvTac	hypothalamus
+W	Male	8	Wild type	A/J	hypothalamus
+X	Male	8	Wild type	A/J	hypothalamus
+Y	Male	8	Wild type	C57BL/6J	hypothalamus
+Z	Male	8	Wild type	C57BL/6J	hypothalamus
