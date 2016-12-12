@@ -40,6 +40,7 @@ dg = connectivity_matrix; % directed graph
 [route, dist] = route_planner(dg, start, target);
 %}
 
+
 % try without the assumption of one-way roads
 start = 16; % node global index
 target = 203;
