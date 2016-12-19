@@ -1,0 +1,172 @@
+LOCUS       NP_006197               1089 aa            linear   PRI 26-JUN-2007
+DEFINITION  platelet-derived growth factor receptor alpha precursor [Homo
+            sapiens].
+ACCESSION   NP_006197
+VERSION     NP_006197.1  GI:5453870
+DBSOURCE    REFSEQ: accession NM_006206.3
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (residues 1 to 1089)
+  AUTHORS   Gredmark,S., Straat,K., Homman-Loudiyi,M., Kannisto,K. and
+            Soderberg-Naucler,C.
+  TITLE     Human cytomegalovirus downregulates expression of receptors for
+            platelet-derived growth factor by smooth muscle cells
+  JOURNAL   J. Virol. 81 (10), 5112-5120 (2007)
+   PUBMED   17344284
+  REMARK    GeneRIF: these observations indicate that an IE and/or E human
+            cytomegalovirus protein(s) downregulates the expression of
+            PDGFR-alpha and -beta in smooth muscle cells
+REFERENCE   2  (residues 1 to 1089)
+  AUTHORS   Liegl,B., Gully,C., Reich,O., Nogales,F.F., Beham,A. and Regauer,S.
+  TITLE     Expression of platelet-derived growth factor receptor in low-grade
+            endometrial stromal sarcomas in the absence of activating mutations
+  JOURNAL   Histopathology 50 (4), 448-452 (2007)
+   PUBMED   17448020
+  REMARK    GeneRIF: PDGFRalpha was expressed in 24/37 endometrial stromal
+            sarcomas(ESS)[65%; strongly by 19/37 & weakly by 5/37 ESS];
+            mutational analysis of PDGFRalpha & PDGFRbeta of metastatic ESS
+            from 3 patients detected no mutations leading to amino acid changes
+REFERENCE   3  (residues 1 to 1089)
+  AUTHORS   Miyazawa,K., Kakazu,N. and Ohyashiki,K.
+  TITLE     Clinical features of hypereosinophilic syndrome: FIP1L1-PDGFRA
+            fusion gene-positive disease is a distinct clinical entity with
+            myeloproliferative features and a poor response to corticosteroid
+  JOURNAL   Int. J. Hematol. 85 (1), 5-10 (2007)
+   PUBMED   17261495
+  REMARK    GeneRIF: data and previous reports suggest that FIP1L1-PDGFRA -
+            positive HES is a distinct clinical entity with myeloproliferative
+            features and showing a poor response to corticosteroid treatment
+REFERENCE   4  (residues 1 to 1089)
+  AUTHORS   Ellis,M.H., Ashur-Fabian,O., Trakhtenbrot,L. and Amariglio,N.
+  TITLE     A clonal hypereosinophilic syndrome with specific and effective
+            therapy: a report of two cases
+  JOURNAL   Isr. Med. Assoc. J. 8 (12), 836-837 (2006)
+   PUBMED   17214097
+  REMARK    GeneRIF: These cases demonstrate the first known linkage between
+            F1P1L1-PDGFRalpha and hypereosinophilic syndrome
+REFERENCE   5  (residues 1 to 1089)
+  AUTHORS   Lasota,J. and Miettinen,M.
+  TITLE     KIT and PDGFRA mutations in gastrointestinal stromal tumors (GISTs)
+  JOURNAL   Semin Diagn Pathol 23 (2), 91-102 (2006)
+   PUBMED   17193822
+  REMARK    GeneRIF: PDGFRA mutations usually occur in gastric GISTs,
+            especially in the epithelioid variants; their overall frequency is
+            approximately 30% to 40% of KIT mutation negative GISTs. Most
+            common is exon 18 mutation leading Asp842Val at the protein level.
+            Review article
+REFERENCE   6  (residues 1 to 1089)
+  AUTHORS   Kanakaraj,P., Raj,S., Khan,S.A. and Bishayee,S.
+  TITLE     Ligand-induced interaction between alpha- and beta-type
+            platelet-derived growth factor (PDGF) receptors: role of receptor
+            heterodimers in kinase activation
+  JOURNAL   Biochemistry 30 (7), 1761-1767 (1991)
+   PUBMED   1847074
+REFERENCE   7  (residues 1 to 1089)
+  AUTHORS   Hsieh,C.L., Navankasattusas,S., Escobedo,J.A., Williams,L.T. and
+            Francke,U.
+  TITLE     Chromosomal localization of the gene for AA-type platelet-derived
+            growth factor receptor (PDGFRA) in humans and mice
+  JOURNAL   Cytogenet. Cell Genet. 56 (3-4), 160-163 (1991)
+   PUBMED   1711435
+REFERENCE   8  (residues 1 to 1089)
+  AUTHORS   Hart,C.E. and Bowen-Pope,D.F.
+  TITLE     Platelet-derived growth factor receptor: current views of the
+            two-subunit model
+  JOURNAL   J. Invest. Dermatol. 94 (6 SUPPL), 53S-57S (1990)
+   PUBMED   2161888
+  REMARK    Review article
+REFERENCE   9  (residues 1 to 1089)
+  AUTHORS   Miki,T., Matsui,T., Heidaran,M.A. and Aaronson,S.A.
+  TITLE     An efficient directional cloning system to construct cDNA libraries
+            containing full-length inserts at high frequency
+  JOURNAL   Gene 83 (1), 137-146 (1989)
+   PUBMED   2531695
+REFERENCE   10 (residues 1 to 1089)
+  AUTHORS   Matsui,T., Heidaran,M., Miki,T., Popescu,N., La Rochelle,W.,
+            Kraus,M., Pierce,J. and Aaronson,S.
+  TITLE     Isolation of a novel receptor cDNA establishes the existence of two
+            PDGF receptor genes
+  JOURNAL   Science 243 (4892), 800-804 (1989)
+   PUBMED   2536956
+COMMENT     REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+            reference sequence was derived from BC015186.1, BC063414.1,
+            M21574.1, M22734.1, AA599881.1, AA625689.1 and AV689272.1.
+            
+            Summary: This gene encodes a cell surface tyrosine kinase receptor
+            for members of the platelet-derived growth factor family. These
+            growth factors are mitogens for cells of mesenchymal origin. The
+            identity of the growth factor bound to a receptor monomer
+            determines whether the functional receptor is a homodimer or a
+            heterodimer, composed of both platelet-derived growth factor
+            receptor alpha and beta polypeptides. Studies in knockout mice,
+            where homozygosity is lethal, indicate that the alpha form of the
+            platelet-derived growth factor receptor is particularly important
+            for kidney development since mice heterozygous for the receptor
+            exhibit defective kidney phenotypes.
+            
+            Publication Note:  This RefSeq record includes a subset of the
+            publications that are available for this gene. Please see the
+            Entrez Gene record to access additional publications.
+FEATURES             Location/Qualifiers
+     source          1..1089
+                     /organism="Homo sapiens"
+                     /db_xref="taxon:9606"
+                     /chromosome="4"
+                     /map="4q11-q13"
+     Protein         1..1089
+                     /product="platelet-derived growth factor receptor alpha
+                     precursor"
+                     /EC_number="2.7.10.1"
+                     /note="FIP1L1/PDGFRA fusion; FIP1L1/PDGFRA fusion protein;
+                     rearranged-in-hypereosinophilia-platelet derived growth
+                     factor receptor alpha fusion protein"
+     sig_peptide     1..23
+                     /calculated_mol_wt=2360
+     mat_peptide     24..1089
+                     /product="platelet-derived growth factor receptor alpha"
+                     /calculated_mol_wt=120328
+     CDS             1..1089
+                     /gene="PDGFRA"
+                     /coded_by="NM_006206.3:149..3418"
+                     /GO_component="integral to plasma membrane [pmid 8586421];
+                     membrane"
+                     /GO_function="ATP binding; nucleotide binding;
+                     platelet-derived growth factor alpha-receptor activity
+                     [pmid 10806482]; receptor activity; transferase activity;
+                     vascular endothelial growth factor receptor activity"
+                     /GO_process="cell proliferation [pmid 10806482]; cell
+                     surface receptor linked signal transduction [pmid
+                     10806482]; protein amino acid phosphorylation;
+                     transmembrane receptor protein tyrosine kinase signaling
+                     pathway"
+                     /db_xref="CCDS:CCDS3495.1"
+                     /db_xref="GeneID:5156"
+                     /db_xref="HGNC:8803"
+                     /db_xref="HPRD:HPRD_01429"
+                     /db_xref="MIM:173490"
+ORIGIN      
+        1 mgtshpaflv lgclltglsl ilcqlslpsi lpnenekvvq lnssfslrcf gesevswqyp
+       61 mseeessdve irneennsgl fvtvlevssa saahtglytc yynhtqteen elegrhiyiy
+      121 vpdpdvafvp lgmtdylviv edddsaiipc rttdpetpvt lhnsegvvpa sydsrqgfng
+      181 tftvgpyice atvkgkkfqt ipfnvyalka tseldlemea lktvyksget ivvtcavfnn
+      241 evvdlqwtyp gevkgkgitm leeikvpsik lvytltvpea tvkdsgdyec aarqatrevk
+      301 emkkvtisvh ekgfieikpt fsqleavnlh evkhfvvevr aypppriswl knnltlienl
+      361 teittdveki qeiryrsklk lirakeedsg hytivaqned avksytfell tqvpssildl
+      421 vddhhgstgg qtvrctaegt plpdiewmic kdikkcnnet swtilannvs niiteihsrd
+      481 rstvegrvtf akveetiavr claknllgae nrelklvapt lrseltvaaa vlvllvivii
+      541 slivlvviwk qkpryeirwr viesispdgh eyiyvdpmql pydsrwefpr dglvlgrvlg
+      601 sgafgkvveg tayglsrsqp vmkvavkmlk ptarssekqa lmselkimth lgphlnivnl
+      661 lgactksgpi yiiteycfyg dlvnylhknr dsflshhpek pkkeldifgl npadestrsy
+      721 vilsfenngd ymdmkqadtt qyvpmlerke vskysdiqrs lydrpasykk ksmldsevkn
+      781 llsddnsegl tlldllsfty qvargmefla skncvhrdla arnvllaqgk ivkicdfgla
+      841 rdimhdsnyv skgstflpvk wmapesifdn lyttlsdvws ygillweifs lggtpypgmm
+      901 vdstfynkik sgyrmakpdh atsevyeimv kcwnsepekr psfyhlseiv enllpgqykk
+      961 syekihldfl ksdhpavarm rvdsdnayig vtykneedkl kdweggldeq rlsadsgyii
+     1021 plpdidpvpe eedlgkrnrh ssqtseesai etgsssstfi kredetiedi dmmddigids
+     1081 sdlvedsfl
+//
+

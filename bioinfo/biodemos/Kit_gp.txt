@@ -1,0 +1,161 @@
+LOCUS       NP_000213                976 aa            linear   PRI 27-JUN-2007
+DEFINITION  v-kit Hardy-Zuckerman 4 feline sarcoma viral oncogene homolog
+            isoform 1 precursor [Homo sapiens].
+ACCESSION   NP_000213
+VERSION     NP_000213.1  GI:4557695
+DBSOURCE    REFSEQ: accession NM_000222.2
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (residues 1 to 976)
+  AUTHORS   Erdogan,G., Bassorgun,C.I., Pestereli,H.E., Simsek,T. and
+            Karaveli,S.
+  TITLE     C-kit protein expression in uterine and ovarian mesenchymal tumours
+  JOURNAL   APMIS 115 (3), 204-209 (2007)
+   PUBMED   17367465
+  REMARK    GeneRIF: KIT may have a significant role in the oncogenesis of
+            mesenchymal tumours of the uterus and ovary.
+REFERENCE   2  (residues 1 to 976)
+  AUTHORS   Bondanza,S., Bellini,M., Roversi,G., Raskovic,D., Maurelli,R.,
+            Paionni,E., Paterna,P., Dellambra,E., Larizza,L. and Guerra,L.
+  TITLE     Piebald trait: implication of kit mutation on in vitro melanocyte
+            survival and on the clinical application of cultured epidermal
+            autografts
+  JOURNAL   J. Invest. Dermatol. 127 (3), 676-686 (2007)
+   PUBMED   17124503
+  REMARK    GeneRIF: a kit mutation may have a role in survival or
+            proliferation of melanocytes from patients with piebaldism
+REFERENCE   3  (residues 1 to 976)
+  AUTHORS   Rehfeld,N., Geddert,H., Atamna,A., Gabbert,H.E., Steidl,U.,
+            Fenk,R., Kronenwett,R., Haas,R. and Rohr,U.P.
+  TITLE     Coexpression of fragile histidine triad and c-kit is relevant for
+            prediction of survival in patients with small cell lung cancer
+  JOURNAL   Cancer Epidemiol. Biomarkers Prev. 15 (11), 2232-2238 (2006)
+   PUBMED   17119051
+  REMARK    GeneRIF: fragile histidine triad and c-kit have roles in
+            progression of fragile histidine triad and c-kit
+REFERENCE   4  (residues 1 to 976)
+  AUTHORS   Lasota,J. and Miettinen,M.
+  TITLE     KIT and PDGFRA mutations in gastrointestinal stromal tumors (GISTs)
+  JOURNAL   Semin Diagn Pathol 23 (2), 91-102 (2006)
+   PUBMED   17193822
+  REMARK    GeneRIF: KIT mutations in GIST are clustered in four exons. Most
+            common are exon 11 mutations .Secondary mutations usually occur in
+            KIT kinase domains in patients after imatinib treatment resulting
+            in resistance to this drug.
+            Review article
+REFERENCE   5  (residues 1 to 976)
+  AUTHORS   Tsuneoka,N., Kuroki,T., Haraguchi,M. and Furui,J.
+  TITLE     Predicting the antitumor effects of STI571 by analysis of c-kit
+            gene mutations in gastrointestinal stromal tumors of the stomach:
+            Report of a case
+  JOURNAL   Surg. Today 36 (11), 989-993 (2006)
+   PUBMED   17072721
+  REMARK    GeneRIF: Patients with an exon 11 mutation of the c-kit gene are
+            reported to have a high response to STI571 (imatinib mesylate,
+            Glivec).
+REFERENCE   6  (residues 1 to 976)
+  AUTHORS   Spritz,R.A., Droetto,S. and Fukushima,Y.
+  TITLE     Deletion of the KIT and PDGFRA genes in a patient with piebaldism
+  JOURNAL   Am. J. Med. Genet. 44 (4), 492-495 (1992)
+   PUBMED   1279971
+REFERENCE   7  (residues 1 to 976)
+  AUTHORS   Giebel,L.B., Strunk,K.M., Holmes,S.A. and Spritz,R.A.
+  TITLE     Organization and nucleotide sequence of the human KIT (mast/stem
+            cell growth factor receptor) proto-oncogene
+  JOURNAL   Oncogene 7 (11), 2207-2217 (1992)
+   PUBMED   1279499
+REFERENCE   8  (residues 1 to 976)
+  AUTHORS   Andre,C., Martin,E., Cornu,F., Hu,W.X., Wang,X.P. and Galibert,F.
+  TITLE     Genomic organization of the human c-kit gene: evolution of the
+            receptor tyrosine kinase subclass III
+  JOURNAL   Oncogene 7 (4), 685-691 (1992)
+   PUBMED   1373482
+REFERENCE   9  (residues 1 to 976)
+  AUTHORS   Duronio,V., Welham,M.J., Abraham,S., Dryden,P. and Schrader,J.W.
+  TITLE     p21ras activation via hemopoietin receptors and c-kit requires
+            tyrosine kinase activity but not tyrosine phosphorylation of p21ras
+            GTPase-activating protein
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 89 (5), 1587-1591 (1992)
+   PUBMED   1371879
+REFERENCE   10 (residues 1 to 976)
+  AUTHORS   Spritz,R.A., Giebel,L.B. and Holmes,S.A.
+  TITLE     Dominant negative and loss of function mutations of the c-kit
+            (mast/stem cell growth factor receptor) proto-oncogene in human
+            piebaldism
+  JOURNAL   Am. J. Hum. Genet. 50 (2), 261-269 (1992)
+   PUBMED   1370874
+COMMENT     REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+            reference sequence was derived from DC376760.1, X06182.1 and
+            BC071593.1.
+            
+            Summary: This gene encodes the human homolog of the proto-oncogene
+            c-kit. C-kit was first identified as the cellular homolog of the
+            feline sarcoma viral oncogene v-kit. This protein is a type 3
+            transmembrane receptor for MGF (mast cell growth factor, also known
+            as stem cell factor). Mutations in this gene are associated with
+            gastrointestinal stromal tumors, mast cell disease, acute
+            myelogenous lukemia, and piebaldism. Multiple transcript variants
+            encoding different isoforms have been found for this gene.
+            
+            Transcript Variant: This variant (1) represents the longer
+            transcript and encodes the longer isoform (1).
+            
+            Publication Note:  This RefSeq record includes a subset of the
+            publications that are available for this gene. Please see the
+            Entrez Gene record to access additional publications.
+FEATURES             Location/Qualifiers
+     source          1..976
+                     /organism="Homo sapiens"
+                     /db_xref="taxon:9606"
+                     /chromosome="4"
+                     /map="4q11-q12"
+     Protein         1..976
+                     /product="v-kit Hardy-Zuckerman 4 feline sarcoma viral
+                     oncogene homolog isoform 1 precursor"
+                     /EC_number="2.7.10.1"
+                     /note="mast/stem cell growth factor receptor;
+                     proto-oncogene tyrosine-protein kinase Kit; piebald trait"
+                     /calculated_mol_wt=109734
+     CDS             1..976
+                     /gene="KIT"
+                     /coded_by="NM_000222.2:88..3018"
+                     /GO_component="integral to membrane; membrane"
+                     /GO_function="ATP binding; nucleotide binding; receptor
+                     activity; receptor signaling protein tyrosine kinase
+                     activity [pmid 9438854]; transferase activity; vascular
+                     endothelial growth factor receptor activity"
+                     /GO_process="protein amino acid dephosphorylation; protein
+                     amino acid phosphorylation; signal transduction [pmid
+                     9990072]; transmembrane receptor protein tyrosine kinase
+                     signaling pathway"
+                     /note="isoform 1 precursor is encoded by transcript
+                     variant 1"
+                     /db_xref="CCDS:CCDS3496.1"
+                     /db_xref="GeneID:3815"
+                     /db_xref="HGNC:6342"
+                     /db_xref="HPRD:HPRD_01287"
+                     /db_xref="MIM:164920"
+ORIGIN      
+        1 mrgargawdf lcvlllllrv qtgssqpsvs pgepsppsih pgksdlivrv gdeirllctd
+       61 pgfvkwtfei ldetnenkqn ewitekaeat ntgkytctnk hglsnsiyvf vrdpaklflv
+      121 drslygkedn dtlvrcpltd pevtnyslkg cqgkplpkdl rfipdpkagi miksvkrayh
+      181 rlclhcsvdq egksvlsekf ilkvrpafka vpvvsvskas yllregeeft vtctikdvss
+      241 svystwkren sqtklqekyn swhhgdfnye rqatltissa rvndsgvfmc yanntfgsan
+      301 vtttlevvdk gfinifpmin ttvfvndgen vdliveyeaf pkpehqqwiy mnrtftdkwe
+      361 dypksenesn iryvselhlt rlkgteggty tflvsnsdvn aaiafnvyvn tkpeiltydr
+      421 lvngmlqcva agfpeptidw yfcpgteqrc sasvlpvdvq tlnssgppfg klvvqssids
+      481 safkhngtve ckayndvgkt sayfnfafkg nnkeqihpht lftplligfv ivagmmciiv
+      541 miltykylqk pmyevqwkvv eeingnnyvy idptqlpydh kwefprnrls fgktlgagaf
+      601 gkvveatayg liksdaamtv avkmlkpsah lterealmse lkvlsylgnh mnivnllgac
+      661 tiggptlvit eyccygdlln flrrkrdsfi cskqedhaea alyknllhsk esscsdstne
+      721 ymdmkpgvsy vvptkadkrr svrigsyier dvtpaimedd elaldledll sfsyqvakgm
+      781 aflaskncih rdlaarnill thgritkicd fglardiknd snyvvkgnar lpvkwmapes
+      841 ifncvytfes dvwsygiflw elfslgsspy pgmpvdskfy kmikegfrml spehapaemy
+      901 dimktcwdad plkrptfkqi vqliekqise stnhiysnla ncspnrqkpv vdhsvrinsv
+      961 gstasssqpl lvhddv
+//
+

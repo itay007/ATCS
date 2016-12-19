@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<demos>
+    <name>Bioinformatics</name>
+    <type>toolbox</type>
+    <icon>$toolbox/matlab/icons/matlabicon.gif</icon>
+    <description isCdata="no">
+        <p>Bioinformatics Toolbox&#8482; offers computational molecular biologists 
+            and other research scientists an open and extensible environment in 
+            which to explore ideas, prototype new algorithms, and build applications 
+            in drug research, genetic engineering, and other genomics and proteomics 
+            projects. Bioinformatics Toolbox software provides access to genomic and proteomic data 
+            formats, analysis techniques, and specialized visualizations for 
+            genomic and proteomic sequence and microarray analysis. Most Bioinformatics Toolbox functions 
+            are implemented in the open MATLAB&#174; language, enabling you to customize 
+            the algorithms or develop your own. 
+       </p>
+    </description>
+    <demosection> 
+       <label>High-Throughput Sequencing</label>
+            <demoitem>
+                <label>Exploring Genome-wide Differences in DNA Methylation Profiles</label>
+                <type>M-file</type>
+                <source>mbdseqdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Identifying Differentially Expressed Genes from RNA-Seq Data</label>
+                <type>M-file</type>
+                <source>rnaseqdedemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Exploring Protein-DNA Binding Sites from Paired-end ChIP-Seq Data</label>
+                <type>M-file</type>
+                <source>chipseqpedemo</source>
+            </demoitem>
+			<demoitem>
+                <label>Working with SFF Files from the 454 Genome Sequencer FLX System</label>
+                <type>M-file</type>
+                <source>sffdemo</source>
+            </demoitem>
+			<demoitem>
+                <label>Working with Illumina/Solexa Next-Generation Sequencing Data</label>
+                <type>M-file</type>
+                <source>ilmnsolexademo</source>
+            </demoitem>    
+            <demoitem>
+                <label>Performing a Metagenomic Analysis of a Sargasso Sea Sample</label>
+                <type>M-file</type>
+                <source>metagenomicdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Analyzing the Human Distal Gut Microbiome</label>
+                <type>M-file</type>
+                <source>gutmicrobiomedemo</source>
+           </demoitem>            
+    </demosection>
+    <demosection>
+       <label>Sequence Analysis</label>
+            <demoitem>
+                <label>Calculating and Visualizing Sequence Statistics</label>
+                <type>M-file</type>
+                <source>seqstatsdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Aligning Pairs of Sequences</label>
+                <type>M-file</type>
+                <source>aligndemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Working with Whole Genome Data</label>
+                <type>M-file</type>
+                <source>biomemorymapdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Comparing Whole Genomes</label>
+                <type>M-file</type>
+                <source>wholegenomedemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Assessing the Significance of an Alignment</label>
+                <type>M-file</type>
+                <source>alignsigdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Using Scoring Matrices to Measure Evolutionary Distance</label>
+                <type>M-file</type>
+                <source>alignscoringdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Using HMMs for Profile Analysis of a Protein Family</label>
+                <type>M-file</type>
+                <source>hmmprofdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Building a Phylogenetic Tree for the Hominidae Species</label>
+                <type>M-file</type>
+                <source>primatesdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Analyzing the Origin of the Human Immunodeficiency Virus</label>
+                <type>M-file</type>
+                <source>hivdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Analyzing Synonymous and Nonsynonymous Substitution Rates</label>
+                <type>M-file</type>
+                <source>dndsdemo</source>
+            </demoitem>   
+            <demoitem>
+                <label>Investigating the Bird Flu Virus</label>
+                <type>M-file</type>
+                <source>birdfludemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Reconstructing the Origin and the Diffusion of the SARS Epidemic</label>
+                <type>M-file</type>
+                <source>sarsdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Bootstrapping Phylogenetic Trees</label>
+                <type>M-file</type>
+                <source>phybootdistdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Exploring Primer Design</label>
+                <type>M-file</type>
+                <source>primerdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Identifying Over-Represented Regulatory Motifs</label>
+                <type>M-file</type>
+                <source>evemotifdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Predicting and Visualizing the Secondary Structure of RNA Sequences</label>
+                <type>M-file</type>
+                <source>rnademo</source>
+            </demoitem>
+			 <demoitem>
+                <label>Predicting Protein Secondary Structure Using a Neural Network</label>
+                <type>M-file</type>
+                <source>secstructnnetdemo</source>
+            </demoitem>
+    </demosection>
+
+    <demosection>
+       <label>Microarray Data Analysis</label>
+            <demoitem>
+                <label>Working with Objects for Microarray Experiment Data</label>
+                <type>M-file</type>
+                <source>maexptdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Analyzing Illumina Bead Summary Gene Expression Data</label>
+                <type>M-file</type>
+                <source>illuminagedemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Detecting DNA Copy Number Alteration in Array-Based CGH Data</label>
+                <type>M-file</type>
+                <source>bacacghdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Analyzing Array-Based CGH Data Using Bayesian Hidden Markov Modeling</label>
+                <type>M-file</type>
+                <source>acghhmmdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Visualizing Microarray Data</label>
+                <type>M-file</type>
+                <source>mousedemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Gene Expression Profile Analysis</label>
+                <type>M-file</type>
+                <source>yeastdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Gene Ontology Enrichment in Microarray Data</label>
+                <type>M-file</type>
+                <source>geneontologydemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Working with Affymetrix Data</label>
+                <type>M-file</type>
+                <source>affydemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Preprocessing Affymetrix Microarray Data at the Probe Level</label>
+                <type>M-file</type>
+                <source>affypreprocessdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Exploring Gene Expression Data</label>
+                <type>M-file</type>
+                <source>cnsgeneexpdemo</source>
+                </demoitem>
+            <demoitem>
+                <label>Analyzing Affymetrix SNP Arrays for DNA Copy Number Variants</label>
+                <type>M-file</type>
+                <source>affysnpcnvdemo</source>
+                </demoitem>
+            <demoitem>
+                <label>Working with GEO Series Data</label>
+                <type>M-file</type>
+                <source>gsedemo</source>
+                </demoitem>
+    </demosection>
+
+    <demosection>
+       <label>Mass Spectrometry Data Analysis</label>
+            <demoitem>
+                <label>Preprocessing Raw Mass Spectrometry Data</label>
+                <type>M-file</type>
+                <source>mspreprodemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Visualizing and Preprocessing Hyphenated Mass Spectrometry Data Sets for Metabolite and Protein/Peptide Profiling</label>
+                <type>M-file</type>
+                <source>lcmsdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Identifying Significant Features and Classifying Protein Profiles</label>
+                <type>M-file</type>
+                <source>cancerdetectdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Differential Analysis of Complex Protein and Metabolite Mixtures using Liquid Chromatography/Mass Spectrometry (LC/MS)</label>
+                <type>M-file</type>
+                <source>diffprotdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Genetic Algorithm Search for Features in Mass Spectrometry Data</label>
+                <type>M-file</type>
+                <source>msgademo</source>
+            </demoitem>
+            <demoitem>
+                <label>Batch Processing of Spectra Using Sequential and Parallel Computing</label>
+                <type>M-file</type>
+                <source>biodistcompdemo</source>
+            </demoitem>
+    </demosection>
+
+    <demosection>
+       <label>Visualization Tools</label>
+            <demoitem>
+                <label>Working with Graph Theory Functions</label>
+                <type>M-file</type>
+                <source>graphtheorydemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Working with the Clustergram Function</label>
+                <type>M-file</type>
+                <source>clustergramdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Visually Representing Interconnected Data</label>
+                <type>M-file</type>
+                <source>biographdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Visualizing the Three-Dimensional Structure of a Molecule</label>
+                <type>M-file</type>
+                <source>molviewerdemo</source>
+            </demoitem>
+    </demosection>
+
+    <demosection>
+       <label>Using MATLAB With Other Applications</label>
+            <demoitem>
+                <label>Calling Bioperl Functions from MATLAB</label>
+                <type>M-file</type>
+                <source>bioperldemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Connecting to Local Databases</label>
+                <type>M-file</type>
+                <source>biodbdemo</source>
+            </demoitem>
+            <demoitem>
+                <label>Accessing NCBI Entrez Databases with E-Utilities</label>
+                <type>M-file</type>
+                <source>ncbieutilsdemo</source>
+            </demoitem>
+    </demosection>  
+
+</demos>

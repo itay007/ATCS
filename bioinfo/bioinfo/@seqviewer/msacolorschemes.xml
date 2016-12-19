@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SymbolColorSchemes>
+	<Scheme>
+	      <Name>IUPAC-IUB</Name>
+            <Type>NT</Type>
+            <Description>IUPAC-IUB color scheme
+		</Description>
+  		<Colors>
+			<option name="A" value="128 255 0" />
+			<option name="C" value="128 255 255" />
+			<option name="G" value="0 128 192" />
+			<option name="T" value="255 50 50" />
+			<option name="U" value="255 50 50" />
+            <option name="R" value="255 142 70" />
+            <option name="Y" value="255 142 70" />
+            <option name="M" value="255 255 0" />
+            <option name="K" value="255 255 0" />
+            <option name="S" value="255 255 0" />
+            <option name="W" value="255 255 0" />
+            <option name="H" value="192 192 192" />
+            <option name="B" value="192 192 192" />
+            <option name="V" value="255 255 255" />
+            <option name="D" value="255 255 255" /> 
+            <option name="N" value="255 255 255" />            
+  		</Colors>
+	</Scheme> 
+	<Scheme>
+	      <Name>Base-pairing</Name>
+            <Type>NT</Type>
+            <Description>Base pairing color scheme
+		</Description>
+  		<Colors>
+			<option name="A" value="255 160 32" />
+			<option name="C" value="32 128 255" />
+			<option name="G" value="32 128 255" />
+			<option name="T" value="255 160 32" />
+			<option name="U" value="255 160 32" />
+  		</Colors>
+	</Scheme>    
+	<Scheme>
+	      <Name>NT</Name>
+            <Type>NT</Type>
+            <Description>Default NT color scheme
+		</Description>
+  		<Colors>
+			<option name="A" value="150 255 150" />
+			<option name="C" value="0 255 255" />
+			<option name="G" value="100 100 255" />
+			<option name="T" value="255 150 150" />
+			<option name="U" value="255 150 150" />
+  		</Colors>
+	</Scheme>    
+
+<Scheme>
+            <Name>RASMOL</Name>
+            <Type>AA</Type>
+		<Description>Rasmal color scheme
+		</Description>
+  		<Colors>
+			<option name="A" value="200 200 200" />
+			<option name="B" value="190 160 110" />
+			<option name="C" value="230 230 0" />
+			<option name="D" value="230 10 10" />
+			<option name="E" value="230 10 10" />
+			<option name="F" value="50 90 170" />
+			<option name="G" value="235 235 235" />
+			<option name="H" value="130 130 210" />
+			<option name="I" value="15 130 15" />
+			<option name="K" value="20 90 255" />
+			<option name="L" value="15 130 15" />
+			<option name="M" value="230 230 0" />
+			<option name="N" value="0 220 220" />
+			<option name="P" value="220 150 130" />
+			<option name="Q" value="0 220 220" />
+			<option name="R" value="20 90 255" />
+			<option name="S" value="250 150 0" />
+			<option name="T" value="250 150 0" />
+			<option name="U" value="190 160 110" />
+			<option name="V" value="15 130 15" />
+		    <option name="W" value="180 90 180" />
+			<option name="Y" value="50 50 170" />
+			<option name="Z" value="190 160 110" />
+			<option name="X" value="190 160 110" />		
+  		</Colors>
+	</Scheme>
+    <Scheme>
+            <Name>Taylor</Name>
+            <Type>AA</Type>
+		<Description>Taylor color scheme - from jalview
+		</Description>
+  		<Colors>
+			<option name="A" value="204 255 0" />
+			<option name="B" value="190 160 110" />
+			<option name="C" value="250 250 0" />
+			<option name="D" value="255 0 0" />
+			<option name="E" value="255 0 102" />
+			<option name="F" value="0 255 102" />
+			<option name="G" value="255 153 0" />
+			<option name="H" value="0 102 255" />
+			<option name="I" value="102 255 0" />
+			<option name="K" value="102 0 255" />
+			<option name="L" value="51 255 0" />
+			<option name="M" value="0 255 0" />
+			<option name="N" value="204 0 255" />
+			<option name="P" value="255 204 0" />
+			<option name="Q" value="255 0 204" />
+			<option name="R" value="0 0 255" />
+			<option name="S" value="255 51 0" />
+			<option name="T" value="255 102 0" />
+			<option name="V" value="153 255 0" />
+		    <option name="W" value="0 204 255" />
+			<option name="Y" value="0 255 204" />		
+  		</Colors>
+	</Scheme>
+	<Scheme name="Structure" type="AA">
+           <Name>Structure</Name>
+            <Type>AA</Type>
+            <Description>ambivalent: darkgreen(204 255 204), ACGPSTWY 
+     				 extern:middleblue(50 150 255), RNDQEHK 
+     				 intern: lightpink,(255 150 150)ILMFV
+            </Description> 
+  		<Colors>
+			<option name="A" value="204 255 204" />		
+			<option name="C" value="204 255 204" />
+			<option name="D" value="50 150 255" />
+			<option name="E" value="50 150 255" />
+			<option name="F" value="255 150 50" />
+			<option name="G" value="204 255 204" />
+			<option name="H" value="50 150 255" />
+			<option name="I" value="255 150 50" />
+			<option name="K" value="50 150 255" />
+			<option name="L" value="255 150 50" />
+			<option name="M" value="255 150 50" />
+			<option name="N" value="50 150 255" />
+			<option name="P" value="204 255 204" />
+			<option name="Q" value="50 150 255" />
+			<option name="R" value="50 150 255" />
+			<option name="S" value="204 255 204" />
+			<option name="T" value="204 255 204" />
+			<option name="V" value="255 150 50" />
+		      <option name="W" value="204 255 204" />
+			<option name="Y" value="204 255 204"/>		
+  		</Colors>
+	</Scheme>
+	<Scheme>
+            <Name>Charge</Name>
+            <Type>AA</Type>
+            <Description>acidic: red(255 150 150), DE 
+                         basic:   lightblue(170 170 255), RHK 
+                         neutral: lightgreen(204 255 204), AILMFPWVNCQGSTY
+            </Description>			
+  		<Colors>
+			<option name="A" value="204 255 204" />		
+			<option name="C" value="204 255 204" />
+			<option name="D" value="255 150 150" />
+			<option name="E" value="255 150 150" />
+			<option name="F" value="204 255 204" />
+			<option name="G" value="204 255 204" />
+			<option name="H" value="170 170 255" />
+			<option name="I" value="204 255 204" />
+			<option name="K" value="170 170 255" />
+			<option name="L" value="204 255 204" />
+			<option name="M" value="204 255 204" />
+			<option name="N" value="204 255 204" />
+			<option name="P" value="204 255 204" />
+			<option name="Q" value="204 255 204" />
+			<option name="R" value="170 170 255" />
+			<option name="S" value="204 255 204" />
+			<option name="T" value="204 255 204" />
+			<option name="V" value="204 255 204" />
+		      <option name="W" value="204 255 204" />
+			<option name="Y" value="204 255 204" />		
+  		</Colors>
+	</Scheme>
+    <Scheme>
+            <Name>Hydrophobicity</Name>
+            <Type>AA</Type>
+            <Description>hydrophile:   light blue(50 150 255), RNDCQEGHKSTY 
+                         hydrophobe:   light yellow(255 255 150), AILMFPWV  
+            </Description>			
+  		<Colors>
+			<option name="A" value="255 255 150" />		
+			<option name="C" value="50 150 255" />
+			<option name="D" value="50 150 255" />
+			<option name="E" value="50 150 255" />
+			<option name="F" value="255 255 150" />
+			<option name="G" value="50 150 255" />
+			<option name="H" value="50 150 255" />
+			<option name="I" value="255 255 150" />
+			<option name="K" value="50 150 255" />
+			<option name="L" value="255 255 150" />
+			<option name="M" value="255 255 150" />
+			<option name="N" value="50 150 255" />
+			<option name="P" value="255 255 150" />
+			<option name="Q" value="50 150 255" />
+			<option name="R" value="50 150 255" />
+			<option name="S" value="50 150 255" />
+			<option name="T" value="50 150 255" />
+			<option name="V" value="255 255 150" />
+		      <option name="W" value="255 255 150" />
+			<option name="Y" value="50 150 255" />		
+  		</Colors>
+	</Scheme>
+    <Scheme>
+            <Name>Function</Name>
+            <Type>AA</Type>
+            <Description>acidic:   red(255 150 150), DE
+                         basic:    light blue(50 150 255), RHK
+                         hydrophobe, nopolar:   lightgrey(210 210 210), AILMFPWV
+                         polar, uncharged:    green(150 255 150), NCQGSTY  
+            </Description>			
+  		<Colors>
+			<option name="A" value="210 210 210" />		
+			<option name="C" value="150 255 150" />
+			<option name="D" value="255 150 150" />
+			<option name="E" value="255 150 150" />
+			<option name="F" value="210 210 210" />
+			<option name="G" value="150 255 150" />
+			<option name="H" value="50 150 255" />
+			<option name="I" value="210 210 210" />
+			<option name="K" value="50 150 255" />
+			<option name="L" value="210 210 210" />
+			<option name="M" value="210 210 210" />
+			<option name="N" value="150 255 150" />
+			<option name="P" value="210 210 210" />
+			<option name="Q" value="150 255 150" />
+			<option name="R" value="50 150 255" />
+			<option name="S" value="150 255 150" />
+			<option name="T" value="150 255 150" />
+			<option name="V" value="210 210 210" />
+		      <option name="W" value="210 210 210" />
+			<option name="Y" value="150 255 150" />		
+  		</Colors>
+	</Scheme>
+</SymbolColorSchemes>
+
