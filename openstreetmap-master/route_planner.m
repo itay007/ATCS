@@ -38,21 +38,24 @@ function [route, dist] = route_planner(dg, S, T)
 if exist('graphshortestpath', 'file')
     [dist, route] = graphshortestpath(dg, S, T, 'Directed', true,...
                                       'Method', 'Dijkstra');
-else
-    [d, pred] = dijkstra(dg, S);
-    
-    route = [];
-    curnode = T;
-    curpred = pred(curnode);
-    while curpred ~= 0
-        route = [curpred, route];
-        
-        curnode = curpred;
-        curpred = pred(curnode);
-    end
-    
-    dist = d(T);
-end
+% else
+%     [d, pred] = dijkstra(dg, S);
+%     
+%     route = [];
+%     curnode = T;
+%     curpred = pred(curnode);
+%     
+%     route = [curnode, route];
+% 
+%     while curpred ~= 0
+%         route = [curpred, route];
+%         
+%         curnode = curpred;
+%         curpred = pred(curnode);
+%     end
+%     
+%     dist = d(T);
+  end
 
 % no path found ?
 if isempty(route)
