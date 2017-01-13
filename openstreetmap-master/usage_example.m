@@ -18,7 +18,7 @@
 % 2010.11.25 (c) Ioannis Filippidis, jfilippidis@gmail.com
 
 %% name file
-openstreetmap_filename = 'map.osm';
+openstreetmap_filename = 'map_MP1.osm';
 %map_img_filename = 'map.png'; % image file saved from online, if available
 
 %% convert XML -> MATLAB struct
@@ -41,8 +41,8 @@ dg = connectivity_matrix; % directed graph
 %}
 
 % try without the assumption of one-way roads
-start = 1; % node global index
-target = 9;
+start = 102; % node global index
+target = 435;
 dg = or(connectivity_matrix, connectivity_matrix.'); % make symmetric
 [route, dist] = route_planner(dg, start, target);
 
