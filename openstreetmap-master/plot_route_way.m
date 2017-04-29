@@ -12,10 +12,10 @@ function [] = plot_route_way(ax, parsed_route_osm)
 %                      transportation network
 %                    = string (optional)
 %
-% 2010.11.06 (c) Ioannis Filippidis, jfilippidis@gmail.com
 %
 % See also PARSE_OPENSTREETMAP, EXTRACT_CONNECTIVITY.
-
+% Edited by Itay Levitan to plot routed way
+%
 % ToDo
 %   add double way roads
 

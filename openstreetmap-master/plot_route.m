@@ -80,4 +80,10 @@ for i=1:size(routed_ways , 2)
     
 end
 
-plot_route_way(ax, parsed_route_osm);
+% plot_route_way(ax, parsed_route_osm);
+
+hold(ax, 'off')
+pause(3);
+
+car_plot(ax, parsed_route_osm);
+
