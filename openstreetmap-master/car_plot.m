@@ -43,40 +43,39 @@ disp(key_catalog.')
 %h1 = plot(nd_coor(1,1), nd_coor(2,1),'^','LineWidth',2,'MarkerEdgeColor','k','MarkerFaceColor','g','MarkerSize',10); %// plot initial position
 
 
-% n=size(nd_coor, 2)-1;
-% for i=1:n
-%     m_nd_coor(1,1) = ((nd_coor(2,2)-nd_coor(2,1))/(nd_coor(1,2)-nd_coor(1,1)));
-%     b = -m_nd_coor(1,1)*nd_coor(1,1)+nd_coor(2,1);
-%     x = linspace(nd_coor(1,1),nd_coor(1,2),20);
-%     %x = nd_coor(1,1):0.0001:nd_coor(1,2);
-%     y=m_nd_coor(1,1)*x+b;
-%     %plot(x,y);
-%     %plot(x(2),y(2),'^','LineWidth',2,'MarkerEdgeColor','k','MarkerFaceColor','g','MarkerSize',10);
-% 
-%     for i=1:20
-%         h2 = plot(x(i),y(i),'*','LineWidth',2,'MarkerEdgeColor','k','MarkerFaceColor','g','MarkerSize',10);
-%         pause(0.3);
-%         set(h2,'Visible','off')
-%     end
-% end
+n=size(nd_coor, 2)-1;
+for i=1:n
+    m_nd_coor(1,i) = ((nd_coor(2,i+1)-nd_coor(2,i))/(nd_coor(1,i+1)-nd_coor(1,i)));
+    b = -m_nd_coor(1,i)*nd_coor(1,i)+nd_coor(2,i);
+    x(1,:) = linspace(nd_coor(1,i),nd_coor(1,i+1),5);
+    %x = nd_coor(1,1):0.0001:nd_coor(1,2);
+    y=m_nd_coor(1,i)*x+b;
+    %plot(x,y);
+    %plot(x(2),y(2),'^','LineWidth',2,'MarkerEdgeColor','k','MarkerFaceColor','g','MarkerSize',10);
 
+    for i=1:5
+        h2 = plot(x(i),y(i),'*','LineWidth',2,'MarkerEdgeColor','k','MarkerFaceColor','g','MarkerSize',10);
+        pause(0.3);
+        set(h2,'Visible','off')
+    end
+end
 
 
 
 %%% one way %%%
-m_nd_coor(1,1) = ((nd_coor(2,2)-nd_coor(2,1))/(nd_coor(1,2)-nd_coor(1,1)));
-b = -m_nd_coor(1,1)*nd_coor(1,1)+nd_coor(2,1);
-x = linspace(nd_coor(1,1),nd_coor(1,2),20);
-%x = nd_coor(1,1):0.0001:nd_coor(1,2);
-y=m_nd_coor(1,1)*x+b;
-%plot(x,y);
-%plot(x(2),y(2),'^','LineWidth',2,'MarkerEdgeColor','k','MarkerFaceColor','g','MarkerSize',10);
-
-for i=1:20
-    h2 = plot(x(i),y(i),'*','LineWidth',2,'MarkerEdgeColor','k','MarkerFaceColor','g','MarkerSize',10);
-    pause(0.3);
-    set(h2,'Visible','off')
-end
+% m_nd_coor(1,1) = ((nd_coor(2,2)-nd_coor(2,1))/(nd_coor(1,2)-nd_coor(1,1)));
+% b = -m_nd_coor(1,1)*nd_coor(1,1)+nd_coor(2,1);
+% x = linspace(nd_coor(1,1),nd_coor(1,2),20);
+% %x = nd_coor(1,1):0.0001:nd_coor(1,2);
+% y=m_nd_coor(1,1)*x+b;
+% %plot(x,y);
+% %plot(x(2),y(2),'^','LineWidth',2,'MarkerEdgeColor','k','MarkerFaceColor','g','MarkerSize',10);
+% 
+% for i=1:20
+%     h2 = plot(x(i),y(i),'*','LineWidth',2,'MarkerEdgeColor','k','MarkerFaceColor','g','MarkerSize',10);
+%     pause(0.3);
+%     set(h2,'Visible','off')
+% end
 
 %%%%%%%%%%%%%%%
 

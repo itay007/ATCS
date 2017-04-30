@@ -41,26 +41,29 @@ dg = connectivity_matrix; % directed graph
 %}
 
 % try without the assumption of one-way roads
-start = 102; % node global index
+%start = 102; % node global index
+start = 500; % node global index
 target = 435;
 dg = or(connectivity_matrix, connectivity_matrix.'); % make symmetric
 [route, dist] = route_planner(dg, start, target);
 
 %% plot
-fig = figure;
+fig = figure(1);
 ax = axes('Parent', fig);
 hold(ax, 'on')
 
 % plot the network, optionally a raster image can also be provided for the
 % map under the vector graphics of the network
 plot_way(ax, parsed_osm)
+
 %plot_way(ax, parsed_osm, map_img_filename) % if you also have a raster image
+plot_nodes(ax, parsed_osm, intersection_node_indices)
 
 plot_route(ax, route, parsed_osm)
 only_nodes = 1:10:1000; % not all nodes, to reduce graphics memory & clutter
 plot_nodes(ax, parsed_osm, only_nodes)
 
-% show intersection nodes (unseful, but may result into a cluttered plot)
-%plot_nodes(ax, parsed_osm, intersection_node_indices)
+%show intersection nodes (unseful, but may result into a cluttered plot)
+plot_nodes(ax, parsed_osm, intersection_node_indices)
 
 hold(ax, 'off')
