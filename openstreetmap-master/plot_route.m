@@ -50,20 +50,39 @@ nodelist = [];
 route_ids = node_ids(1,route);
 n=1;
 
+
 %%find route_ids in waynd
 %optional_route_ids = [];
-for i=1:size(waynd,2)%loop for each way node struct
-    for j=1: size(waynd{1,i},2) %loop for each node struct element
-     way_size= size(waynd{1,i},2);
-    optional_route_ids_cell(1,j) = {find(waynd{1,i}(1,j) == route_ids(1,:))}; %find if there are 2 routed node in way's
-    end
-    optional_route_ids = cell2mat(optional_route_ids_cell);
-    if(size(optional_route_ids,2)>1)
-        routed_ways(n) = {i}; % routed ways
-        n=n+1;
-     end
-end
 
+for i=1:size(waynd,2)%loop for each way node struct
+        flag=0;
+        for j=1: size(waynd{1,i},2) %loop for each node struct element
+            way_size= size(waynd{1,i},2);
+            optional_route_ids_cell(1,j) = {find(waynd{1,i}(1,j) == route_ids(1,:))}; %find if there are 2 routed node in way's
+            while find(waynd{1,i}(1,j) == route_ids(1,:)); %find start and end node that constract the needed way
+                if flag==1
+                    node_flag(i,2)= j;%our way last node
+                    break;
+                end
+                if flag==0
+                    node_flag(i,1)= j;%our way first node
+                    flag=1;
+                end
+            end
+        end
+
+        optional_route_ids = cell2mat(optional_route_ids_cell);
+        if(size(optional_route_ids,2)>1)
+            routed_ways(n) = {i}; % routed ways
+            waynd_route{1,i}(1,:) = waynd{1,i}(node_flag(i,1):node_flag(i,2)); %creat the new node element that create the way
+            n=n+1;
+        end      
+end
+% t=3;
+% TEST = waynd(1:j)
+
+% waynd(1, j);
+%node_ways_ids(j1:j2)
 %routed_ways = cell2mat(routed_ways);
 
 
@@ -71,11 +90,11 @@ end
 
 parsed_route_osm.bounds = parsed_osm.bounds;
 parsed_route_osm.node = parsed_osm.node;
-    
+
 for i=1:size(routed_ways , 2)
     j=cell2mat(routed_ways(i));
     [parsed_route_osm.way.id(1,i)] = node_ways_ids(1 , j);
-    [parsed_route_osm.way.nd(1,i)] = waynd(1, j);
+    [parsed_route_osm.way.nd(1,i)] = waynd_route(1, j); %insert the new way node element
     [parsed_route_osm.way.tag(1,i)] = node_ways_tag(1 , j);
     
 end

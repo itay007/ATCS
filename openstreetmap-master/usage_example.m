@@ -42,7 +42,7 @@ dg = connectivity_matrix; % directed graph
 
 % try without the assumption of one-way roads
 %start = 102; % node global index
-start = 500; % node global index
+start = 858; % node global index
 target = 435;
 dg = or(connectivity_matrix, connectivity_matrix.'); % make symmetric
 [route, dist] = route_planner(dg, start, target);
