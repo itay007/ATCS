@@ -30,6 +30,13 @@ openstreetmap_filename = 'map_MP1.osm';
 %% find connectivity
 [connectivity_matrix, intersection_node_indices] = extract_connectivity(parsed_osm);
 intersection_nodes = get_unique_node_xy(parsed_osm, intersection_node_indices);
+%% split ways
+parsed_osm1=parsed_osm;
+[intersections_id,parsed_osm1]=split_ways(parsed_osm1,intersection_node_indices);
+%        parsed_osm=parsed_osm1;
+% % 
+%   [connectivity_matrix, intersection_node_indices] = extract_connectivity(parsed_osm);
+%      intersection_nodes = get_unique_node_xy(parsed_osm, intersection_node_indices);
 
 %% plan a route
 %{
@@ -41,18 +48,40 @@ dg = connectivity_matrix; % directed graph
 %}
 
 % try without the assumption of one-way roads
-%start = 102; % node global index
-start = 858; % node global index
-target = 435;
-dg = or(connectivity_matrix, connectivity_matrix.'); % make symmetric
-[route, dist] = route_planner(dg, start, target);
+% start = 102; % node global index
+% start = 858; % node global index
+%  target = 435;
+%  dg = or(connectivity_matrix, connectivity_matrix.'); % make symmetric
+%  [route, dist] = route_planner(dg, start, target);
+%% % % % weights change 2 ---work
+start = 69; % node global index
+target = 484;
+connect1 = zeros(139,1);
+connect2 = zeros(139,1);
+k=0;
+for i=1:875
+    for j=1:875
+        if(connectivity_matrix(i,j) == 1)
+            k=k+1;
+            connect1(k,1)=i;
+            connect2(k,1)=j;
+         end
+    end
+end
 
+W = rand(139,1);
+dg = sparse(connect1,connect2,W,875,875);
+[route, dist] = route_planner(dg, start, target);
+% parsed_osm=parsed_osm1;
 %% plot
 fig = figure(1);
 ax = axes('Parent', fig);
 hold(ax, 'on')
 
-% plot the network, optionally a raster image can also be provided for the
+%% calc distance 
+% calc_dist_mat(ax, parsed_osm)
+
+%% plot the network, optionally a raster image can also be provided for the
 % map under the vector graphics of the network
 plot_way(ax, parsed_osm)
 
