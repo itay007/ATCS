@@ -16,57 +16,79 @@
 %          GET_UNIQUE_NODE_XY, ROUTE_PLANNER, PLOT_ROUTE, PLOT_NODES.
 %
 % 2010.11.25 (c) Ioannis Filippidis, jfilippidis@gmail.com
-
-%% name file
-openstreetmap_filename = 'map_MP1.osm';
-%map_img_filename = 'map.png'; % image file saved from online, if available
-
-%% convert XML -> MATLAB struct
-% convert the OpenStreetMap XML Data file donwloaded as map.osm
-% to a MATLAB structure containing part of the information describing the
-% transportation network
-[parsed_osm, osm_xml] = parse_openstreetmap(openstreetmap_filename);
-
-%% find connectivity
-[connectivity_matrix, intersection_node_indices] = extract_connectivity(parsed_osm);
-intersection_nodes = get_unique_node_xy(parsed_osm, intersection_node_indices);
+clear all
+[ intersection_nodes,connectivity_matrix,intersection_node_indices,parsed_osm ] = getmap(  );
 %% split ways
-parsed_osm1=parsed_osm;
-[counting,intersections_id,parsed_osm1]=split_ways(parsed_osm1,intersection_node_indices);
-%        parsed_osm=parsed_osm1;
-% % 
-   [connectivity_matrix, intersection_node_indices] = extract_connectivity(parsed_osm1);
-      intersection_nodes = get_unique_node_xy(parsed_osm1, intersection_node_indices);
-
+[ parsed_osm1,counting,connectivity_matrix ] = arrange_map( intersection_node_indices,parsed_osm);
+                                               
 %% calc distance
-[dists] = calc_dist_mat(parsed_osm1,counting);
-[dg] = w_dist(dists,counting,parsed_osm1,connectivity_matrix);
+[dists,waynd] = calc_dist_mat(parsed_osm1,counting);
+[dg,dists] = w_dist(dists,counting,parsed_osm1,connectivity_matrix);
 
-%% plan a route
-start = 102; % node global index
-target =505;
-[route, dist] = route_planner(dg, start, target);
+%% choose the mode you want to plot
+choose=2;
+flag=0;
+for x=1:2
+    flag=flag+1;
+    switch choose
+        case 1 % block a way
+                    %%
+            if (flag==1)
+              n=1; %number of cars in total
+              n1=0; % number of cars for second route
+              weight=1;  %this weight control the traffic for the roads!
+            elseif (flag == 2)
+              n=1; %number of cars in total
+              n1=0; % number of cars for second route
+              weight=2;  %this weight control the traffic for the roads! big number= more traffic!
+                           %input 0 for total block for all the roads on this path!
+              [dg] = calc_weight_dist(dg,n,n1,route,weight);
+            end
+            
+            
+            [route,dist] = plan_first_route(dg,n,n1)
 
-%% dg*weights
-% [dist_weight,arr_dg] = calc_weight_dist(dg,dists,counting,parsed_osm1);
 
-%% plot
-fig = figure(1);
-ax = axes('Parent', fig);
-hold(ax, 'on')
+        case 2 % route cars to a new road
+            %explain -  for n=4 and n1=3 with weight of 1.4 we see all the cars
+            %going in the same way from  495 to 484
+            %after changing the n1=1 (the number of cars for the route after calc
+            %the weights) we can see that the 3 cars for the first road
+            %changed the weight of the road, so the last car goes from another
+            %road.  --showing that the number of cars for road make traffic
 
-%% plot the network, optionally a raster image can also be provided for the
-% map under the vector graphics of the network
-plot_way(ax, parsed_osm)
 
-%plot_way(ax, parsed_osm, map_img_filename) % if you also have a raster image
-plot_nodes(ax, parsed_osm, intersection_node_indices)
+            %%
+            if (flag==1)  %no traffic - do not change!!!
+              n=4; %number of cars in total
+              n1=3; % number of cars for second route
+              weight=1.4;  %this weight control the traffic for the roads!
+            else  %traffic - do not change!!!
+              n=4; %number of cars in total
+              n1=1; % number of cars for second route
+              weight=1.4;  %this weight control the traffic for the roads!
+            end
+            %% plan a route1 for one car
+            % start = 69; % node global index
+            % target =484;
+            % [route1, dist] = route_planner(dg, start, target);
+            %% plan a route2 for one car
+            % start = 102; % node global index
+            % target =505;
+            % [route2, dist] = route_planner(dg, start, target);
+            %% plan a route for N cars
+            [route,dist] = plan_first_route(dg,n,n1);
 
-plot_route(ax, route, parsed_osm)
-only_nodes = 1:10:1000; % not all nodes, to reduce graphics memory & clutter
-plot_nodes(ax, parsed_osm, only_nodes)
+            % dg*weights - plan a route for N cars after weights of roads
+            [dg] = calc_weight_dist(dg,n,n1,route,weight);
+            [ route ] = plan_second_route( route,dg,n,n1  );
 
-%show intersection nodes (unseful, but may result into a cluttered plot)
-plot_nodes(ax, parsed_osm, intersection_node_indices)
 
-hold(ax, 'off')
+
+        case 3 %route cars random --- what do we do here? ideas!
+    end
+
+
+    %%plots
+    plots( waynd,route,counting,n,parsed_osm, intersection_node_indices)
+end

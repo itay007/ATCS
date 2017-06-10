@@ -1,4 +1,4 @@
-function [dg] = w_dist(dists,counting,parsed_osm1,connectivity_matrix)
+function [dg,dists] = w_dist(dists,counting,parsed_osm1,connectivity_matrix)
 %% arrange dg as parsed_osm1
 
 ways = parsed_osm1.way;

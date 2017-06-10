@@ -1,4 +1,4 @@
-function [dists] = calc_dist_mat(parsed_osm1,counting)
+function [dists,waynd] = calc_dist_mat(parsed_osm1,counting)
 
 nodes = parsed_osm1.node;
 node_ids = nodes.id;
@@ -38,5 +38,6 @@ end
                 end
             end
 %             waynd{1,i}(5,1)=d;
-            dists(i)=1-d;
+            %dists(i)=1-d;
+            dists(i)=d;
        end
