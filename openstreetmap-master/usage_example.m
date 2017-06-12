@@ -16,7 +16,7 @@
 %          GET_UNIQUE_NODE_XY, ROUTE_PLANNER, PLOT_ROUTE, PLOT_NODES.
 %
 % 2010.11.25 (c) Ioannis Filippidis, jfilippidis@gmail.com
-clear all
+% clear all
 [ intersection_nodes,connectivity_matrix,intersection_node_indices,parsed_osm ] = getmap(  );
 %% split ways
 [ parsed_osm1,counting,connectivity_matrix ] = arrange_map( intersection_node_indices,parsed_osm);
@@ -27,17 +27,15 @@ clear all
 
 %% choose the mode you want to plot
 choose=2;
-flag=0;
 for x=1:2
-    flag=flag+1;
     switch choose
         case 1 % block a way
                     %%
-            if (flag==1)
+            if (x==1)
               n=1; %number of cars in total
               n1=0; % number of cars for second route
               weight=1;  %this weight control the traffic for the roads!
-            elseif (flag == 2)
+            elseif (x == 2)
               n=1; %number of cars in total
               n1=0; % number of cars for second route
               weight=2;  %this weight control the traffic for the roads! big number= more traffic!
@@ -45,8 +43,9 @@ for x=1:2
               [dg] = calc_weight_dist(dg,n,n1,route,weight);
             end
             
-            
-            [route,dist] = plan_first_route(dg,n,n1)
+            start_tar(1,1:3)=495;
+            start_tar(2,1:3)=484;
+            [route,dist] = plan_first_route(dg,n,n1,start_tar);
 
 
         case 2 % route cars to a new road
@@ -59,14 +58,31 @@ for x=1:2
 
 
             %%
-            if (flag==1)  %no traffic - do not change!!!
+            if (x==1)  %no traffic - do not change!!!
               n=4; %number of cars in total
               n1=3; % number of cars for second route
-              weight=1.4;  %this weight control the traffic for the roads!
-            else  %traffic - do not change!!!
+              weight=1;  %this weight control the traffic for the roads!
+              
+              start1 = 495; % node global index
+              target1 = 484;
+              start2=69;
+              
+              start_tar(1,1)=start1;
+              start_tar(2,1)=target1;
+               start_tar(1,2:4)=start2;
+              start_tar(2,2:4)=target1;
+            elseif(x==2)  %traffic - do not change!!!
               n=4; %number of cars in total
               n1=1; % number of cars for second route
-              weight=1.4;  %this weight control the traffic for the roads!
+              weight=1.2;  %this weight control the traffic for the roads!
+              start1 = 495; % node global index
+              target1 = 484;
+              start2=69;
+              
+              start_tar(1,1:3)=start1;
+              start_tar(2,1:3)=target1;
+              start_tar(1,4)=start2;
+              start_tar(2,4)=target1;
             end
             %% plan a route1 for one car
             % start = 69; % node global index
@@ -77,11 +93,11 @@ for x=1:2
             % target =505;
             % [route2, dist] = route_planner(dg, start, target);
             %% plan a route for N cars
-            [route,dist] = plan_first_route(dg,n,n1);
+            [route,dist] = plan_first_route(dg,n,n1,start_tar);
 
             % dg*weights - plan a route for N cars after weights of roads
             [dg] = calc_weight_dist(dg,n,n1,route,weight);
-            [ route ] = plan_second_route( route,dg,n,n1  );
+            [ route ] = plan_second_route( route,dg,n,n1,start_tar);
 
 
 
@@ -90,5 +106,5 @@ for x=1:2
 
 
     %%plots
-    plots( waynd,route,counting,n,parsed_osm, intersection_node_indices)
+    plots( waynd,route,counting,n,n1,parsed_osm, intersection_node_indices)
 end

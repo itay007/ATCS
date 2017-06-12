@@ -17,6 +17,13 @@ for i=1:t
             b(j) = -m_nd_coor{1,j}(1,i)*routeXY{1,j}(1,i)+routeXY{1,j}(2,i);
             x{1,j}(1,:) = linspace(routeXY{1,j}(1,i),routeXY{1,j}(1,i+1),5);
             y{1,j}(1,:)=m_nd_coor{1,j}(1,i)*x{1,j}+b(j);
+%             if isnan(y{1,j}(1,:))
+%                 x{1,j}(1,:) = mem_x{1,j}(1,1);
+%                 y{1,j}(1,:) = mem_y{1,j}(1,1);
+%             else
+%                 mem_x{1,j}(1,:) = x{1,j}(1,:);
+%                 mem_y{1,j}(1,:)= y{1,j}(1,:);
+%             end
         end
     end
     for z=1:5

@@ -1,4 +1,4 @@
-function [  ] = Plots( waynd,route,counting,n,parsed_osm, intersection_node_indices)
+function [  ] = Plots( waynd,route,counting,n,n1,parsed_osm, intersection_node_indices)
 %PLOTS Summary of this function goes here
 %   Detailed explanation goes here
 
@@ -6,7 +6,7 @@ function [  ] = Plots( waynd,route,counting,n,parsed_osm, intersection_node_indi
 %[routeXY] = XY_Route(waynd,route1,counting);
 %% XY of routes for n cars
 for i=1:n
-    [routeXY1] = XY_Route(waynd,route{1,i},counting);
+    [routeXY1] = XY_Route(waynd,route{1,i},counting,i,n,n1);
     routeXY{1,i}(1,:) = routeXY1(1,:);
     routeXY{1,i}(2,:) = routeXY1(2,:);
 end
