@@ -1,4 +1,4 @@
-function [] = plot_nodes(ax, parsed_osm, only_node_indices, show_id)
+function [] = plot_nodes(ax, parsed_osm, only_node_indices,route)
 % plot (selected) nodes and label each with index and id
 %
 % usage
@@ -19,7 +19,7 @@ function [] = plot_nodes(ax, parsed_osm, only_node_indices, show_id)
 % See also PARSE_OPENSTREETMAP, ROUTE_PLANNER.
 
 % do not show node id (default)
-if nargin < 4
+if nargin < 5
     show_id = 0;
 end
 
@@ -54,7 +54,30 @@ for i=only_node_indices
     else
         curtxt = ['index=', num2str(i) ];
     end
-    textmd(node_xys(:, i), curtxt, 'Parent', ax)
+    colors={'Color','black','red','blue','green','Magenta'};
+    road_color=2;
+    sizer=size(route,2);
+    if(sizer>0)
+        if(i==route{1,1}(1,1) || i==route{1,1}(1,size(route{1,1},2)))
+            road_color=3;
+        end
+    end
+    if(sizer>1)
+        if(i==route{1,2}(1,1) || i==route{1,2}(1,size(route{1,2},2)))
+            road_color=4;
+        end
+    end
+    if(sizer>2)
+        if(i==route{1,3}(1,1) || i==route{1,3}(1,size(route{1,3},2)))
+            road_color=5;
+        end
+    end
+    if(sizer>3)
+        if(i==route{1,4}(1,1) || i==route{1,4}(1,size(route{1,4},2)))
+            road_color=6;
+        end
+    end
+    textmd(node_xys(:, i), curtxt, 'Parent', ax,colors(1),colors(road_color))
 end
 
 restorehold(ax, held)

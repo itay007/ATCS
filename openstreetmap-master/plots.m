@@ -1,4 +1,4 @@
-function [  ] = Plots( waynd,route,counting,n,n1,parsed_osm, intersection_node_indices)
+function [  ] = Plots( waynd,route,counting,n,n1,parsed_osm, intersection_node_indices,dist)
 %PLOTS Summary of this function goes here
 %   Detailed explanation goes here
 
@@ -21,7 +21,7 @@ hold(ax, 'on')
 % map under the vector graphics of the network
 plot_way(ax, parsed_osm)
 
-plot_nodes(ax, parsed_osm, intersection_node_indices)
+plot_nodes(ax, parsed_osm, intersection_node_indices,route)
 
 %plot_route_new(routeXY)  %plot for one car
 plot_route_new_n(routeXY,n)  %plot for n car
@@ -30,7 +30,7 @@ only_nodes = 1:10:1000; % not all nodes, to reduce graphics memory & clutter
 plot_nodes(ax, parsed_osm, only_nodes)
 
 %show intersection nodes (unseful, but may result into a cluttered plot)
-plot_nodes(ax, parsed_osm, intersection_node_indices)
+plot_nodes(ax, parsed_osm, intersection_node_indices,route)
 
 hold(ax, 'off')
 

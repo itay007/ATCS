@@ -15,7 +15,7 @@ for i=1:size(counting,2)
         last = counting(2,i);
          dists(2,i) = waynd{1,i}(2,first);
          dists(3,i) = waynd{1,i}(2,last);
-        dg(dists(2,i),dists(3,i)) = dists(1,i,1);
+        dg(dists(2,i),dists(3,i)) = dists(1,i);
     end
 end
 
