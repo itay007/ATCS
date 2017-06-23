@@ -1,8 +1,6 @@
 function [route,dist] = plan_first_route(dg,n,n1,start_tar )
-%PLAN_FIRST_ROUTE Summary of this function goes here
-%   Detailed explanation goes here
+% 2017.6.23 (c) Ofer Keren, ofer293@gmail.com; Itay Levitan, itay007@gmail.com
 
-% we need to add start and stop by counting and waynd...somehow
 
 for i=1:(n-n1)
     if i==1

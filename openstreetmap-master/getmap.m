@@ -1,6 +1,6 @@
 function [ intersection_nodes,connectivity_matrix,intersection_node_indices,parsed_osm ] = getmap(  )
-%GETMAP Summary of this function goes here
-%   Detailed explanation goes here
+% 2017.6.23 (c) Ofer Keren, ofer293@gmail.com; Itay Levitan, itay007@gmail.com
+
 %% name file
 openstreetmap_filename = 'map_MP1.osm';
 %map_img_filename = 'map.png'; % image file saved from online, if available

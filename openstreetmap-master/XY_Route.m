@@ -1,6 +1,7 @@
 function [ routeXY ] = XY_Route( waynd,route1,counting,car_no,n,n1 )
 %XY_ROUTE Summary of this function goes here
-%   Detailed explanation goes here
+% 2017.6.23 (c) Ofer Keren, ofer293@gmail.com; Itay Levitan, itay007@gmail.com
+                
 
 z=1;
 for i=1:(size(route1,2)-1)

@@ -39,24 +39,8 @@ if exist('graphshortestpath', 'file')
 %     [dist, route] = graphshortestpath(dg, S, T, 'Directed', true,...
 %                                       'Method', 'Dijkstra');
       [dist,route,pred] = graphshortestpath(dg,S,T);                             
-% else
-%     [d, pred] = dijkstra(dg, S);
-%     
-%     route = [];
-%     curnode = T;
-%     curpred = pred(curnode);
-%     
-%     route = [curnode, route];
-% 
-%     while curpred ~= 0
-%         route = [curpred, route];
-%         
-%         curnode = curpred;
-%         curpred = pred(curnode);
-%     end
-%     
-%     dist = d(T);
-  end
+
+end
 
 % no path found ?
 if isempty(route)

@@ -1,4 +1,6 @@
 function [dg] = calc_weight_dist(dg,n,n1,route,weight)
+% 2017.6.23 (c) Ofer Keren, ofer293@gmail.com; Itay Levitan, itay007@gmail.com
+
 for i=1:(n-n1)
     for j=1: (size(route{1,i}, 2)-1)
         first = route{1,i}(1,j);

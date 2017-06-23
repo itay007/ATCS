@@ -1,21 +1,5 @@
-% example script for using the OpenStreetMap functions
-%
-% use the example map.osm file in the release on github
-%
-% or
-%
-% download an OpenStreetMap XML Data file (extension .osm) from the
-% OpenStreetMap website:
-%   http://www.openstreetmap.org/
-% after zooming in the area of interest and using the "Export" option to
-% save it as an OpenStreetMap XML Data file, selecting this from the
-% "Format to Export" options. The OSM XML is specified in:
-%   http://wiki.openstreetmap.org/wiki/.osm
-%
-% See also PARSE_OPENSTREETMAP, PLOT_WAY, EXTRACT_CONNECTIVITY,
-%          GET_UNIQUE_NODE_XY, ROUTE_PLANNER, PLOT_ROUTE, PLOT_NODES.
-%
-% 2010.11.25 (c) Ioannis Filippidis, jfilippidis@gmail.com
+% 2017.6.23 (c) Ofer Keren, ofer293@gmail.com; Itay Levitan, itay007@gmail.com
+
 % clear all
 [ intersection_nodes,connectivity_matrix,intersection_node_indices,parsed_osm ] = getmap(  );
 %% split ways
@@ -26,7 +10,11 @@
 [dg,dists] = w_dist(dists,counting,parsed_osm1,connectivity_matrix);
 dg= dg.'+dg;
 %% choose the mode you want to plot
-choose=3;
+disp('1.Block a Path');
+disp('2.Traffic Accumulation');
+disp('3.Random Mode');
+choose=input('Choose Simulation Mode:');
+
 if (choose==1)
     loops=1;
 elseif (choose==2)
@@ -36,31 +24,7 @@ elseif(choose==3)
 end
 for x=1:loops
     switch choose
-        case 1 % block a way
-                    %%
-                    %for showing that increasing the weight changing the
-                    %route
-%             if (x==1)
-%               n=1; %number of cars in total
-%               n1=0; % number of cars for second route
-%               weight=1;  %this weight control the traffic for the roads!
-%             elseif (x == 2)
-%               n=1; %number of cars in total
-%               n1=0; % number of cars for second route
-%               weight=2;  %this weight control the traffic for the roads! big number= more traffic!
-%                            %input 0 for total block for all the roads on this path!
-%               [dg] = calc_weight_dist(dg,n,n1,route,weight);
-%             elseif (x == 3)
-%               n=1; %number of cars in total
-%               n1=0; % number of cars for second route
-%               weight=10;  %this weight control the traffic for the roads! big number= more traffic!
-%                            %input 0 for total block for all the roads on this path!
-%               [dg] = calc_weight_dist(dg,n,n1,route,weight);
-%             end
-           
-%             start_tar(1,1)=102;
-%             start_tar(2,1)=484;
-%             [route,dist] = plan_first_route(dg,n,n1,start_tar);
+        case 1 % Block a Path Mode
 %%
                 n=1; %number of cars in total
                 n1=0; % number of cars for second route
@@ -75,7 +39,7 @@ for x=1:loops
 
                 [route,dist] = plan_first_route(dg,n,n1,start_tar);
 
-        case 2 %% route cars to a new road
+        case 2 %% Traffic Accumulation Mode
             %explain -  for n=4 and n1=3 with weight of 1.4 we see all the cars
             %going in the same way from  495 to 484
             %after changing the n1=1 (the number of cars for the route after calc
@@ -119,10 +83,7 @@ for x=1:loops
 
 
 
-        case 3 %route cars random --- what do we do here? ideas!
-            n=4; %number of cars in total
-            n1=0; % number of cars for second route
-            weight=1;  %this weight control the traffic for the roads!
+        case 3 %Random Mode
             for k1=1:4
                 num1=0;
                 num2=0;
@@ -134,9 +95,26 @@ for x=1:loops
                     num2=intersection_node_indices(ran);
                     start_tar(2,k1)=num2;
                 end
-            end  
+            end 
+            n=4; %number of cars in total
+            n1=3; % number of cars for second route
+            weight=1.2;  %this weight control the traffic for the roads!
             [route,dist] = plan_first_route(dg,n,n1,start_tar);
- 
+            n=2; %number of cars in total
+            n1=1; % number of cars for second route
+            weight=1.2;  %this weight control the traffic for the roads!
+            [dg] = calc_weight_dist(dg,n,n1,route,weight);
+            [ route ] = plan_second_route( route,dg,n,n1,start_tar);
+            n=3; %number of cars in total
+            n1=1; % number of cars for second route
+            weight=1.2;  %this weight control the traffic for the roads!
+            [dg] = calc_weight_dist(dg,n,n1,route,weight);
+            [ route ] = plan_second_route( route,dg,n,n1,start_tar);
+            n=4; %number of cars in total
+            n1=1; % number of cars for second route
+            weight=1.2;  %this weight control the traffic for the roads!
+            [dg] = calc_weight_dist(dg,n,n1,route,weight);
+            [ route ] = plan_second_route( route,dg,n,n1,start_tar);
     end
 
 

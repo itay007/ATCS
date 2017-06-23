@@ -1,4 +1,6 @@
 function [dg,dists] = w_dist(dists,counting,parsed_osm1,connectivity_matrix)
+% 2017.6.23 (c) Ofer Keren, ofer293@gmail.com; Itay Levitan, itay007@gmail.com
+
 %% arrange dg as parsed_osm1
 
 ways = parsed_osm1.way;
@@ -19,22 +21,3 @@ for i=1:size(counting,2)
     end
 end
 
-
-
-
-
-
-% for i=1:size(waynd,2)%loop for each way node struct
-% %     counter=0;
-%     for k=1:size(waynd{1,i},2) %loop for each node struct element
-%         for j=1:size(intersections_id,2)
-%             if (waynd{1,i}(1,k)==intersections_id(j))
-%                waynd{1,i}(2,k)=intersection_node_indices(j);
-%                counter=counter+1;
-%             end
-%         end
-%     end
-%     if (counter == 0)
-%         waynd{1,i}(2,1:size(waynd{1,i},2)) = 0;
-%     end
-% end

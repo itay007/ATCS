@@ -1,6 +1,6 @@
 function [ route ] = plan_second_route( route,dg,n,n1,start_tar )
-%PLAN_SECOND_ROUTE Summary of this function goes here
-%   Detailed explanation goes here
+% 2017.6.23 (c) Ofer Keren, ofer293@gmail.com; Itay Levitan, itay007@gmail.com
+
 
 for i=(n-n1+1):n
     if i==1
