@@ -1,7 +1,7 @@
 % 2017.6.23 (c) Ofer Keren, ofer293@gmail.com; Itay Levitan, itay007@gmail.com
 
 % clear all
-[ intersection_nodes,connectivity_matrix,intersection_node_indices,parsed_osm ] = getmap(  );
+[ intersection_nodes,connectivity_matrix ,intersection_node_indices,parsed_osm ] = getmap(  );
 %% split ways
 [ parsed_osm1,counting,connectivity_matrix ] = arrange_map( intersection_node_indices,parsed_osm);
                                                
@@ -48,9 +48,9 @@ for x=1:loops
             %road.  --showing that the number of cars for road make traffic
             
             if (x==1)  %no traffic - do not change!!!
-              n=4; %number of cars in total
-              n1=3; % number of cars for second route
-              weight=1;  %this weight control the traffic for the roads!
+              n=2; %number of cars in total
+              n1=1; % number of cars for second route
+              weight=1.2;  %this weight control the traffic for the roads!
               
               start1 = 495; % node global index
               target1 = 484;
@@ -58,8 +58,16 @@ for x=1:loops
               
               start_tar(1,1)=start1;
               start_tar(2,1)=target1;
-               start_tar(1,2:4)=start2;
-              start_tar(2,2:4)=target1;
+              start_tar(1,2)=start2;
+              start_tar(2,2)=target1;
+                
+              % plan a route for N cars
+              [route,dist] = plan_first_route(dg,4,3,start_tar);
+
+              % dg*weights - plan a route for N cars after weights of roads
+              [dg] = calc_weight_dist(dg,4,3,route,weight,1);
+              [ route ] = plan_second_route( route,dg,2,1,start_tar);
+
             elseif(x==2)  %traffic - do not change!!!
               n=4; %number of cars in total
               n1=1; % number of cars for second route
@@ -72,14 +80,14 @@ for x=1:loops
               start_tar(2,1:3)=target1;
               start_tar(1,4)=start2;
               start_tar(2,4)=target1;
+ 
+              % plan a route for N cars
+              [route,dist] = plan_first_route(dg,n,n1,start_tar);
+
+              % dg*weights - plan a route for N cars after weights of roads
+              [dg] = calc_weight_dist(dg,n,n1,route,weight,1);
+              [ route ] = plan_second_route( route,dg,n,n1,start_tar);
             end
-
-            % plan a route for N cars
-            [route,dist] = plan_first_route(dg,n,n1,start_tar);
-
-            % dg*weights - plan a route for N cars after weights of roads
-            [dg] = calc_weight_dist(dg,n,n1,route,weight);
-            [ route ] = plan_second_route( route,dg,n,n1,start_tar);
 
 
 
@@ -96,25 +104,30 @@ for x=1:loops
                     start_tar(2,k1)=num2;
                 end
             end 
+
             n=4; %number of cars in total
             n1=3; % number of cars for second route
             weight=1.2;  %this weight control the traffic for the roads!
             [route,dist] = plan_first_route(dg,n,n1,start_tar);
+             [dg] = calc_weight_dist(dg,n,n1,route,weight,1);
+             
             n=2; %number of cars in total
             n1=1; % number of cars for second route
             weight=1.2;  %this weight control the traffic for the roads!
-            [dg] = calc_weight_dist(dg,n,n1,route,weight);
             [ route ] = plan_second_route( route,dg,n,n1,start_tar);
+            [dg] = calc_weight_dist(dg,4,2,route,weight,2);
+
             n=3; %number of cars in total
             n1=1; % number of cars for second route
             weight=1.2;  %this weight control the traffic for the roads!
-            [dg] = calc_weight_dist(dg,n,n1,route,weight);
             [ route ] = plan_second_route( route,dg,n,n1,start_tar);
+            [dg] = calc_weight_dist(dg,4,1,route,weight,3);
+
             n=4; %number of cars in total
             n1=1; % number of cars for second route
             weight=1.2;  %this weight control the traffic for the roads!
-            [dg] = calc_weight_dist(dg,n,n1,route,weight);
             [ route ] = plan_second_route( route,dg,n,n1,start_tar);
+            [dg] = calc_weight_dist(dg,4,0,route,weight,4);
     end
 
 
