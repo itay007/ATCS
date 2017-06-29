@@ -21,13 +21,13 @@ for i=1:t
         for j=1:n
              if (t1(j) <= size(routeXY{1,j}, 2)-1) 
                  if(j==1)
-                    h(j) = plot(x{1,j}(z),y{1,j}(z),'*','LineWidth',2,'MarkerEdgeColor','red','MarkerFaceColor','g','MarkerSize',10);
+                    h(j) = plot(x{1,j}(z),y{1,j}(z),'*','LineWidth',2,'MarkerEdgeColor','black','MarkerFaceColor','g','MarkerSize',10);
                  elseif(j==2)
-                     h(j) = plot(x{1,j}(z),y{1,j}(z),'*','LineWidth',2,'MarkerEdgeColor','blue','MarkerFaceColor','g','MarkerSize',10);
+                     h(j) = plot(x{1,j}(z),y{1,j}(z),'*','LineWidth',2,'MarkerEdgeColor','black','MarkerFaceColor','g','MarkerSize',10);
                  elseif(j==3)
-                     h(j) = plot(x{1,j}(z),y{1,j}(z),'*','LineWidth',2,'MarkerEdgeColor','green','MarkerFaceColor','g','MarkerSize',10);
+                     h(j) = plot(x{1,j}(z),y{1,j}(z),'*','LineWidth',2,'MarkerEdgeColor','black','MarkerFaceColor','g','MarkerSize',10);
                  elseif(j==4)
-                     h(j) = plot(x{1,j}(z),y{1,j}(z),'*','LineWidth',2,'MarkerEdgeColor','Magenta','MarkerFaceColor','g','MarkerSize',10);
+                     h(j) = plot(x{1,j}(z),y{1,j}(z),'*','LineWidth',2,'MarkerEdgeColor','black','MarkerFaceColor','g','MarkerSize',10);
                  end
              end
         end

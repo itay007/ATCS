@@ -54,7 +54,7 @@ for i=only_node_indices
     else
         curtxt = ['index=', num2str(i) ];
     end
-    colors={'Color','black','red','blue','green','Magenta'};
+    colors={'Color','black','black','black','black','black'};
     road_color=2;
     sizer=size(route,2);
     if(sizer>0)
